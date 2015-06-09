@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Nebula3 version="1">
+    <Options exportFlags="4" exportMode="0" scale="1.000000" />
+    <States>
+        <ModelNode name="root/water_geo" material="Water">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:system/white" />
+                <Texture name="NormalMap" value="tex:materials/wasser_bump" />
+                <Texture name="ReflectionMap" value="tex:system/sky" />
+                <Texture name="DisplacementMap" value="tex:materials/wasser_bump" />
+                <Texture name="FoamMap" value="tex:system/white" />
+            </Textures>
+            <Variables>
+                <Variable name="TessellationFactor" type="3" value="32.000000" min="0.000000" max="1.000000" />
+                <Variable name="WaterColor" type="6" value="0.000000,0.100000,0.150000,1.000000" />
+                <Variable name="FoamIntensity" type="3" value="0.480000" min="0.000000" max="1.000000" />
+                <Variable name="DeepDistance" type="3" value="10.000000" min="0.000000" max="1.000000" />
+                <Variable name="SceneScale" type="3" value="2.000000" min="0.000000" max="1.000000" />
+                <Variable name="HeightScale" type="3" value="1.000000" min="0.000000" max="1.000000" />
+                <Variable name="FogDistance" type="3" value="50.000000" min="0.000000" max="1.000000" />
+                <Variable name="WaveSpeed" type="3" value="0.650000" min="0.000000" max="1.000000" />
+                <Variable name="FoamDistance" type="3" value="0.500000" min="0.000000" max="1.000000" />
+            </Variables>
+        </ModelNode>
+    </States>
+</Nebula3>

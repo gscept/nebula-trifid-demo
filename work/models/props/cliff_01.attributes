@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Nebula3 version="1">
+    <Options exportFlags="5" exportMode="0" scale="1.000000" />
+    <States>
+        <ModelNode name="root/cliff_01_LP7" material="Static">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:props/cliff_01_diff" />
+                <Texture name="NormalMap" value="tex:props/cliff_01_normal" />
+            </Textures>
+            <Variables />
+        </ModelNode>
+    </States>
+</Nebula3>

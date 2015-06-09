@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BluePrints>       
+    <Entity cppclass="Entity" type="ClickPlayer">
+        <Property type="GraphicsFeature::ChaseCameraProperty" />
+        <Property type="GraphicsFeature::ActorGraphicsProperty" />
+        <Property type="PhysicsFeature::ActorPhysicsProperty" />
+        <Property type="GraphicsFeature::AnimationControlProperty" />
+        <Property type="ScriptingFeature::ScriptingProperty" />
+    </Entity>    
+    <Entity cppclass="Entity" type="Graphics">
+        <Property type="GraphicsFeature::GraphicsProperty" />
+        <Property type="ScriptingFeature::ScriptingProperty" />
+    </Entity>
+    <Entity cppclass="Entity" type="GraphicsInput">
+        <Property type="GraphicsFeature::GraphicsProperty" />
+        <Property type="GraphicsFeature::InputProperty" />
+        <Property type="PhysicsFeature::PhysicsProperty" />
+        <Property type="ScriptingFeature::ScriptingProperty" />
+    </Entity>    
+    <Entity cppclass="Entity" type="Player">
+        <Property type="GraphicsFeature::InputProperty" masterOnly="true"/>
+        <Property type="GraphicsFeature::ChaseCameraProperty" masterOnly="true"/>
+        <Property type="GraphicsFeature::ActorGraphicsProperty" />
+        <Property type="PhysicsFeature::ActorPhysicsProperty" />
+        <Property type="GraphicsFeature::AnimationControlProperty" />
+        <Property type="ScriptingFeature::ScriptingProperty" />
+    </Entity>            
+</BluePrints>

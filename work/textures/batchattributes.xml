@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Textures>
+    <Texture pattern="*/*" comment="Default attribute" maxHeight="4096" maxWidth="4096" mipFilter="Kaiser" mipMaps="Yes" mipSharpen="None" quality="Low" rgb="dxt1c" rgba="dxt3" scaleFilter="Kaiser" scaleX="1.000000" scaleY="1.000000" />
+</Textures>

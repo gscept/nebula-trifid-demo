@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Nebula3 version="1">
+    <Options exportFlags="12" exportMode="0" scale="0.010000" />
+    <States>
+        <ModelNode name="root/tree_canopy_mesh" material="Foliage">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:props/prop_tree_oak_foliage_diffuse" />
+                <Texture name="NormalMap" value="tex:props/prop_tree_oak_foliage_normal" />
+                <Texture name="SpecularMap" value="tex:system/white" />
+                <Texture name="RoughnessMap" value="tex:system/black" />
+            </Textures>
+            <Variables>
+                <Variable name="WindIntensity" type="3" value="3.960000" min="0.000000" max="1.000000" />
+                <Variable name="WindSpeed" type="3" value="5.760000" min="0.000000" max="1.000000" />
+                <Variable name="WindAlphaWaveSize" type="3" value="6.290000" min="0.000000" max="1.000000" />
+                <Variable name="WindAlphaPower" type="3" value="1.000000" min="0.000000" max="1.000000" />
+                <Variable name="AlphaSensitivity" type="3" value="0.410000" min="0.000000" max="1.000000" />
+                <Variable name="WindDirection" type="6" value="1.000000,1.000000,1.000000,0.000000" />
+                <Variable name="WindForce" type="3" value="0.070000" min="0.000000" max="1.000000" />
+                <Variable name="MatSpecularIntensity" type="6" value="0.000000,0.000000,0.000000,0.000000" />
+            </Variables>
+        </ModelNode>
+        <ModelNode name="root/tree_wood_mesh" material="Vertex colored">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:props/prop_tree_oak_bark_diffuse" />
+                <Texture name="NormalMap" value="tex:props/prop_tree_oak_bark_normal" />
+            </Textures>
+            <Variables />
+        </ModelNode>
+    </States>
+</Nebula3>

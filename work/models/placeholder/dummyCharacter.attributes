@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Nebula3 version="1">
+    <Options exportFlags="4" exportMode="1" scale="1.000000" />
+    <States>
+        <ModelNode name="dummyChar" material="Skinned">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:materials/putz_hell" />
+                <Texture name="NormalMap" value="tex:materials/putz_hell_bump" />
+                <Texture name="SpecularMap" value="tex:system/darkgray" />
+                <Texture name="RoughnessMap" value="tex:system/gray" />
+                <Texture name="CavityMap" value="tex:system/gray" />
+            </Textures>
+            <Variables>
+                <Variable name="MatRoughnessIntensity" type="3" value="0.270000" min="0.000000" max="1.000000" />
+                <Variable name="MatSpecularIntensity" type="6" value="0.000000,0.000000,0.000000,1.000000" />
+            </Variables>
+        </ModelNode>
+        <ModelNode name="dummyCharacter_ch/dummyChar" material="Skinned">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:system/white" />
+                <Texture name="NormalMap" value="tex:system/nobump" />
+                <Texture name="EmissiveMap" value="tex:system/black" />
+            </Textures>
+            <Variables />
+        </ModelNode>
+        <ModelNode name="root/dummyChar" material="Placeholder">
+            <Textures>
+                <Texture name="DiffuseMap" value="tex:system/placeholder" />
+                <Texture name="NormalMap" value="tex:system/nobump" />
+            </Textures>
+            <Variables />
+        </ModelNode>
+    </States>
+    <Takes>
+        <Take name="Take 001">
+            <Clip name="runForward" start="10" stop="28" post="1" pre="1" />
+            <Clip name="strafeLeft" start="30" stop="48" post="1" pre="1" />
+            <Clip name="strafeRight" start="50" stop="68" post="1" pre="1" />
+            <Clip name="runBackward" start="70" stop="83" post="1" pre="1" />
+            <Clip name="jump" start="100" stop="123" post="1" pre="1" />
+            <Clip name="use" start="130" stop="236" post="0" pre="0" />
+            <Clip name="death" start="240" stop="333" post="0" pre="0" />
+            <Clip name="standing" start="340" stop="505" post="1" pre="1" />
+            <Clip name="New clip" start="0" stop="0" post="0" pre="0" />
+            <Clip name="New clip" start="0" stop="0" post="0" pre="0" />
+        </Take>
+    </Takes>
+</Nebula3>

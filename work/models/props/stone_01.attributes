@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Nebula3 version="1">
+    <Options exportFlags="4" exportMode="0" scale="1.000000" />
+    <States>
+        <ModelNode name="root/stone_03_LP3:stone_01_LP" material="Static">
+            <Textures>
+                <Texture name="NormalMap" value="tex:props/stone_01_norm" />
+                <Texture name="DiffuseMap" value="tex:props/stone_01_ao" />
+            </Textures>
+            <Variables />
+        </ModelNode>
+    </States>
+</Nebula3>
