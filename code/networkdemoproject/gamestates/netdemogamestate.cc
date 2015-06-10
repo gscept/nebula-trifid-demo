@@ -20,9 +20,9 @@
 #include "effects/effectsfeatureunit.h"
 #include "networkdemoproject/netdemogameapplication.h"
 
-namespace Tools
+namespace Demos
 {
-__ImplementClass(Tools::DemoGameState, 'DMGS', BaseGameFeature::GameStateHandler);
+__ImplementClass(Demos::DemoGameState, 'DMGS', BaseGameFeature::GameStateHandler);
 
 using namespace BaseGameFeature;
 using namespace GraphicsFeature;
@@ -161,7 +161,7 @@ DemoGameState::HandleInput()
 	{
 		for (int i = 0; i < this->boxes.Size(); i++)
 		{
-			EntityManager::Instance()->DeleteEntity(this->boxes[i]);
+			EntityManager::Instance()->RemoveEntity(this->boxes[i]);
 		}
 		this->boxes.Clear();
 	}

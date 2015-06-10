@@ -1,11 +1,11 @@
 #pragma once
 //------------------------------------------------------------------------------
 /**
-    @class Tools::DemoGameState
+    @class Demos::DemoGameState
     
     A basic game state
     
-    (C) 2013-2014 Individual contributors, see AUTHORS file
+    (C) 2013-2015 Individual contributors, see AUTHORS file
 */
 #include "statehandlers/gamestatehandler.h"
 #include "graphics/spotlightentity.h"
@@ -14,7 +14,7 @@
 #include "game/entity.h"
 
 //------------------------------------------------------------------------------
-namespace Tools
+namespace Demos
 {
 class DemoGameState : public BaseGameFeature::GameStateHandler
 {
@@ -43,5 +43,5 @@ private:
 	Util::Array<Ptr<Game::Entity>> boxes;
 	Ptr<Game::Entity> player;
 }; 
-} // namespace Tools
+} // namespace Demos
 //------------------------------------------------------------------------------

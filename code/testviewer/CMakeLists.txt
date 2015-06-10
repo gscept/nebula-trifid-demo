@@ -19,8 +19,8 @@ ADD_EXECUTABLE(testviewer ${ALLSRCS})
 SET_TARGET_PROPERTIES(testviewer PROPERTIES FOLDER "Demos")
 
 # link to render, will pull in dependencies and includes
-TARGET_LINK_LIBRARIES(testviewer render)
-ADD_DEPENDENCIES(testviewer render)
+TARGET_LINK_LIBRARIES(testviewer render imgui dynui framecapture)
+ADD_DEPENDENCIES(testviewer render imgui dynui framecapture)
 
 # default nebula compiler settings
 N_SET_COMPILER_DEFAULTS()

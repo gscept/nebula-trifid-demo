@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-//  demogameapplication.cc
+//  netdemogameapplication.cc
 //  (C) 2011-2015 Individual contributors, see AUTHORS file
 //------------------------------------------------------------------------------
 #include "stdneb.h"
@@ -19,7 +19,7 @@
 #include "uicommands.h"
 
 
-namespace Tools
+namespace Demos
 {
 using namespace Graphics;
 using namespace Math;

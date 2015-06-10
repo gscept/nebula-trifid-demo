@@ -1,4 +1,12 @@
 #pragma once
+//------------------------------------------------------------------------------
+/**
+	@class Demos::DemoProjectApplication
+
+	NebulaT network demo project application.
+
+	(C) 2011-2015 Individual contributors, see AUTHORS file
+*/
 #include "graphics/spotlightentity.h"
 #include "graphics/modelentity.h"
 #include "graphics/globallightentity.h"
@@ -15,15 +23,8 @@
 #include "multiplayerfeatureunit.h"
 #include "networkgame.h"
 #include "networkplayer.h"
-//------------------------------------------------------------------------------
-/**
-    @class Tools::DemoProjectApplication
-    
-    NebulaT demo project application.
 
-    (C) 2011-2013 Individual contributors, see AUTHORS file
-*/
-namespace  Tools
+namespace  Demos
 {
 class DemoProjectApplication : public App::GameApplication
 {

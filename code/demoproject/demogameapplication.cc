@@ -165,6 +165,7 @@ DemoProjectApplication::SetupGameFeatures()
 	mode.SetAspectRatio(1920 / float(1200));
 	upd->SetTripleBufferingEnabled(true);
 	upd->SetDisplayMode(mode);
+	// uncomment for setting fullscreen
 	//GraphicsInterface::Instance()->Send(upd.upcast<Messaging::Message>());
 }
 
@@ -185,10 +186,11 @@ DemoProjectApplication::CleanupGameFeatures()
 	this->uiFeature = 0;
 	this->gameServer->RemoveGameFeature(this->physicsFeature.upcast<Game::FeatureUnit>());
 	this->physicsFeature = 0;
-	this->gameServer->RemoveGameFeature(this->graphicsFeature.upcast<Game::FeatureUnit>());
-	this->graphicsFeature = 0;
 	this->gameServer->RemoveGameFeature(this->scriptingFeature.upcast<Game::FeatureUnit>());
 	this->scriptingFeature = 0;
+	this->gameServer->RemoveGameFeature(this->graphicsFeature.upcast<Game::FeatureUnit>());
+	this->graphicsFeature = 0;
+
 	GameApplication::CleanupGameFeatures();
 }
 }
