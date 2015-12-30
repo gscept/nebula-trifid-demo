@@ -530,6 +530,24 @@
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
+            <Object category="Camera">
+                <Attributes>
+                    <_ID>demo_full|object|Camera|_0</_ID>
+                    <Id></Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>9c08211e-6a82-4a58-b21f-a8161917a757</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000</Transform>
+                    <Name></Name>
+                    <CameraFocus>true</CameraFocus>
+                    <InputMouseGrab>false</InputMouseGrab>
+                    <MayaCameraCenterOfInterest>0.000000,0.000000,0.000000,0.000000</MayaCameraCenterOfInterest>
+                    <InputFocus>true</InputFocus>
+                    <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
+                    <MayaCameraRenderCenterOfInterest>false</MayaCameraRenderCenterOfInterest>
+                </Attributes>
+            </Object>
             <Object category="Graphics">
                 <Attributes>
                     <_ID>demo_full|object|Graphics|pad2_0</_ID>
@@ -591,6 +609,26 @@
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
                     <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
+                </Attributes>
+            </Object>
+            <Object category="Camera">
+                <Attributes>
+                    <_ID>demo_full|object|Camera|Camera_0</_ID>
+                    <Id>Camera</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>a94fb421-1c67-4961-b639-7ef03e310808</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 6.644860, 5.458467, 0.000000, 1.000000</Transform>
+                    <Name></Name>
+                    <Placeholder>examples/camera</Placeholder>
+                    <Graphics>examples/camera</Graphics>
+                    <CameraFocus>true</CameraFocus>
+                    <InputMouseGrab>false</InputMouseGrab>
+                    <MayaCameraCenterOfInterest>0.000000,0.000000,0.000000,0.000000</MayaCameraCenterOfInterest>
+                    <InputFocus>true</InputFocus>
+                    <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
+                    <MayaCameraRenderCenterOfInterest>false</MayaCameraRenderCenterOfInterest>
                 </Attributes>
             </Object>
             <Object category="Player">

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NebulaT>
+    <Surface template="Skinned">
+        <Param name="DiffuseMap" value="tex:system/white.dds" />
+        <Param name="NormalMap" value="tex:system/darkgray.dds" />
+        <Param name="CavityMap" value="tex:system/gray.dds" />
+        <Param name="RoughnessMap" value="tex:system/darkgray.dds" />
+        <Param name="SpecularMap" value="tex:system/specmap.dds" />
+    </Surface>
+</NebulaT>

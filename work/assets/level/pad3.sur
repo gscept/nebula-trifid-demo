@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NebulaT>
+    <Surface template="Skinned">
+        <Param name="DiffuseMap" value="tex:materials/checker.dds" />
+        <Param name="NormalMap" value="tex:materials/checker_bump.dds" />
+        <Param name="SpecularMap" value="tex:materials/checker_bump.dds" />
+        <Param name="RoughnessMap" value="tex:materials/checker_bump.dds" />
+        <Param name="CavityMap" value="tex:materials/checker_bump.dds" />
+    </Surface>
+</NebulaT>
