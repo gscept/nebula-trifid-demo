@@ -8,7 +8,7 @@
 
 ImplementNebulaApplication()
 
-using namespace Tools;
+using namespace Demos;
 using namespace Util;
 
 //------------------------------------------------------------------------------

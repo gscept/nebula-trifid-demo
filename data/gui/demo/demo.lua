@@ -1,4 +1,4 @@
 function test()
 	door = getentitybyname("door")
-	playanimclip(door,"opendoor")	
+	playanimclip(door,"opendoor", 1, false)	
 end;
