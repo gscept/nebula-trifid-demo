@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <NebulaT>
     <Surface template="Skinned">
-        <Param name="DiffuseMap" value="tex:materials/putz_hell.dds" />
-        <Param name="NormalMap" value="tex:materials/putz_hell_bump.dds" />
-        <Param name="SpecularMap" value="tex:system/darkgray.dds" />
-        <Param name="RoughnessMap" value="tex:system/gray.dds" />
-        <Param name="CavityMap" value="tex:system/gray.dds" />
-        <Param name="MatRoughnessIntensity" value="0.270000" />
+        <Param name="AlbedoMap" value="tex:system/gray" />
+        <Param name="SpecularMap" value="tex:system/specmap" />
+        <Param name="NormalMap" value="tex:system/nobump" />
+        <Param name="RoughnessMap" value="tex:system/specmap" />
+        <Param name="CavityMap" value="tex:system/darkgray" />
+        <Param name="MatAlbedoIntensity" value="1.000000,1.000000,1.000000,1.000000" />
         <Param name="MatSpecularIntensity" value="0.000000,0.000000,0.000000,1.000000" />
+        <Param name="MatRoughnessIntensity" value="0.270000" />
     </Surface>
 </NebulaT>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <NebulaT>
     <Surface template="Skinned">
-        <Param name="DiffuseMap" value="tex:materials/checker" />
+        <Param name="AlbedoMap" value="tex:materials/checker" />
         <Param name="SpecularMap" value="tex:system/white" />
         <Param name="NormalMap" value="tex:materials/checker_bump" />
         <Param name="RoughnessMap" value="tex:system/white" />

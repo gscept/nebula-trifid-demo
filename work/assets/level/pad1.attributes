@@ -8,7 +8,7 @@
                 <Texture name="NormalMap" value="tex:system/nobump" />
             </Textures>
         </ModelNode>
-        <ModelNode name="pad1_graphics" material="sur:level/pad1">
+        <ModelNode name="pad1_graphics" material="sur:level/Artefact">
             <Textures>
                 <Texture name="DiffuseMap" value="tex:system/placeholder" />
                 <Texture name="NormalMap" value="tex:system/nobump" />

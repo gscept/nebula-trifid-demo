@@ -4,6 +4,7 @@
         <Layers>
             <Layer name="Default" autoload="true" visible="true" locked="false" />
             <Layer name="New layer" autoload="true" visible="true" locked="false" />
+            <Layer name="Trees" autoload="true" visible="true" locked="false" />
         </Layers>
         <Entities>
             <Object category="_Environment">
@@ -11,9 +12,9 @@
                     <_ID>demo_full|environment|tree_0</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>00054b3c-c3e0-4c63-b603-bbbbd6c7e4f0</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>-1.694285, 0.000000, 0.335030, 0.000000, 0.000000, 1.727092, 0.000000, 0.000000, -0.335030, 0.000000, -1.694285, 0.000000, -52.462570, 14.455582, -34.347862, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -30,9 +31,9 @@
                     <_ID>demo_full|environment|tree_1</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>00aa0eb8-7afa-4e0f-baf1-3a6fdd69c8b4</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 13.988194, 7.769096, -115.297371, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -51,8 +52,8 @@
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>082e7283-7a37-4890-b2e8-f39358dfd4b3</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>-0.876433, -0.264994, -0.402049, 0.000000, -0.345830, 0.927394, 0.142627, 0.000000, 0.335063, 0.264044, -0.904441, 0.000000, -7.002967, 10.044331, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.954393, -0.264994, 0.137522, 0.000000, 0.291314, 0.927394, -0.234685, 0.000000, -0.065348, 0.264044, 0.962294, 0.000000, -7.002967, 10.044331, -31.922997, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -68,9 +69,9 @@
                     <_ID>demo_full|environment|tree_2</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>0c4b8c9f-12fa-4b78-85ca-69c52bce07d3</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>-1.860391, 0.000000, 0.367876, 0.000000, 0.000000, 1.896414, 0.000000, 0.000000, -0.367876, 0.000000, -1.860391, 0.000000, -41.740128, 14.455582, -44.307533, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -87,9 +88,9 @@
                     <_ID>demo_full|environment|tree_3</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>13d847ea-21fb-4975-8bea-115d7788bcda</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 14.071887, 7.769096, -100.154198, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -106,9 +107,9 @@
                     <_ID>demo_full|environment|tree_4</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>185b7030-b666-481c-bdc4-ace029ae7339</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>1.704990, 0.000000, -1.455613, 0.000000, 0.000000, 2.241830, 0.000000, 0.000000, 1.455613, 0.000000, 1.704990, 0.000000, 19.779671, 2.690096, -86.775452, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -125,9 +126,9 @@
                     <_ID>demo_full|environment|tree_5</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>1d15faf8-7ba7-43f0-9363-116e69fa4d10</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>-0.981005, 0.000000, 0.193985, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.193985, 0.000000, -0.981005, 0.000000, -37.319664, 14.455582, -56.160091, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -146,8 +147,8 @@
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>27339fdc-ce6a-452a-ad6e-aa47f571c356</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>-0.579716, -0.000656, -0.814818, 0.000000, 0.000000, -1.000000, 0.000805, 0.000000, -0.814818, 0.000466, 0.579716, 0.000000, 4.198581, 10.044331, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.786650, 0.001507, 0.617397, 0.000000, -0.000228, -0.999997, 0.002731, 0.000000, 0.617399, -0.002290, -0.786647, 0.000000, 4.198581, 10.044331, -31.922997, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -163,9 +164,9 @@
                     <_ID>demo_full|environment|tree_6</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>27fe4ad1-982c-4ba9-97bc-fc34ef11cb68</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>1.946215, 0.000000, 0.000000, 0.000000, 0.000000, 1.946215, 0.000000, 0.000000, 0.000000, 0.000000, 1.946215, 0.000000, -41.740128, 14.455582, -64.515053, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -184,8 +185,46 @@
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>2b231944-f12f-4570-81bf-f3a3eaf89883</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>-0.876433, -0.264994, -0.402049, 0.000000, -0.345830, 0.927394, 0.142627, 0.000000, 0.335063, 0.264044, -0.904441, 0.000000, -0.704838, 9.668083, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.954393, -0.264511, 0.138449, 0.000000, 0.291314, 0.926566, -0.237932, 0.000000, -0.065348, 0.267414, 0.961363, 0.000000, -0.704838, 12.676052, -31.922997, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_3</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>3404389d-5149-4619-9c1d-5cc181b6410a</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.705836, 0.000000, -0.708375, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.708375, 0.000000, 0.705836, 0.000000, 0.271610, 11.204380, -25.276205, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_4</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>3de958d8-1777-4fac-a87d-8dde6a16144f</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.751002, 0.000000, -0.660299, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.660299, 0.000000, -0.751002, 0.000000, -4.476812, 10.044331, -25.276205, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -217,13 +256,13 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
-                    <_ID>demo_full|environment|box_3</_ID>
+                    <_ID>demo_full|environment|box_5</_ID>
                     <Id>box</Id>
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
-                    <Guid>4f47ff45-930d-4f2f-ac29-385762b9f12c</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>0.705836, -0.003549, -0.708366, 0.000000, 0.000000, 0.999987, -0.005009, 0.000000, 0.708375, 0.003536, 0.705827, 0.000000, 6.088691, 13.339228, -10.209551, 1.000000</Transform>
+                    <Guid>4b94a86b-79c8-488c-b6e8-1f553d583418</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.579716, -0.000656, -0.814818, 0.000000, 0.000000, -1.000000, 0.000805, 0.000000, -0.814818, 0.000466, 0.579716, 0.000000, 4.198581, 10.044331, -25.276205, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -236,13 +275,51 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
-                    <_ID>demo_full|environment|box_4</_ID>
+                    <_ID>demo_full|environment|box_6</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>4f47ff45-930d-4f2f-ac29-385762b9f12c</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.476458, -0.000469, 0.879197, 0.000000, 0.001418, 0.999998, 0.001301, 0.000000, -0.879196, 0.001867, -0.476456, 0.000000, 6.088691, 16.347197, -31.922997, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_7</_ID>
                     <Id>box</Id>
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>51a606dc-f29b-4f80-8ab6-2ebfb60c3bd6</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>-0.864567, -0.168264, -0.473508, 0.000000, -0.354610, 0.871928, 0.337629, 0.000000, 0.356054, 0.459814, -0.813508, 0.000000, 2.506572, 10.044331, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.963240, -0.167529, 0.210005, 0.000000, 0.244538, 0.870436, -0.427249, 0.000000, -0.111220, 0.462898, 0.879406, 0.000000, 2.506572, 13.052299, -31.922997, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_8</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>60733376-5318-4edf-ae63-63c00c9a78cc</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.705836, -0.003549, -0.708366, 0.000000, 0.000000, 0.999987, -0.005009, 0.000000, 0.708375, 0.003536, 0.705827, 0.000000, 6.088691, 13.339228, -25.276205, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -277,9 +354,9 @@
                     <_ID>demo_full|environment|tree_7</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>910c3455-f9af-4a39-9a3b-22148ea8525b</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>0.923026, 0.000000, -0.384738, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.384738, 0.000000, 0.923026, 0.000000, -33.707306, 14.455582, -46.416218, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -293,12 +370,31 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
+                    <_ID>demo_full|environment|box_9</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>91b59e51-cc4f-4216-b69f-9da90dc9acb9</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.723319, 0.158580, -0.672058, 0.000000, -0.005744, 0.974620, 0.223790, 0.000000, 0.690490, -0.158011, 0.705872, 0.000000, -1.934837, 11.204380, -25.276205, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
                     <_ID>demo_full|environment|tree_8</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>928bc7c8-dfe1-4b8b-be03-563565347343</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>1.704990, 0.000000, -1.455613, 0.000000, 0.000000, 2.241830, 0.000000, 0.000000, 1.455613, 0.000000, 1.704990, 0.000000, 13.852341, 7.769096, -94.898743, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -312,13 +408,13 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
-                    <_ID>demo_full|environment|box_5</_ID>
+                    <_ID>demo_full|environment|box_10</_ID>
                     <Id>box</Id>
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>96aff4ad-328e-4010-b0d5-a8fc47b53e13</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>-0.751002, 0.000000, -0.660299, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.660299, 0.000000, -0.751002, 0.000000, -4.476812, 10.044331, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>0.907192, 0.001474, 0.420712, 0.000000, 0.000000, 0.999994, -0.003503, 0.000000, -0.420715, 0.003178, 0.907187, 0.000000, -4.476812, 13.052299, -31.922997, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -334,9 +430,9 @@
                     <_ID>demo_full|environment|tree_9</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>9c695377-fab2-45c9-9a26-0683858b1373</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>-0.981005, 0.000000, 0.193985, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.193985, 0.000000, -0.981005, 0.000000, -33.066936, 14.455582, -34.347862, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -353,9 +449,9 @@
                     <_ID>demo_full|environment|tree_10</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>a4c33aa3-5aa3-4553-b140-1f1918c10009</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>-0.981005, 0.000000, 0.193985, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.193985, 0.000000, -0.981005, 0.000000, -41.740128, 14.455582, -33.860283, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -372,9 +468,9 @@
                     <_ID>demo_full|environment|tree_11</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>ac3455da-d37d-4f4f-8434-a12bb7d88593</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>0.471235, 0.000000, 0.882008, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.882008, 0.000000, 0.471235, 0.000000, -51.747662, 14.455582, -46.416218, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -388,12 +484,31 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
+                    <_ID>demo_full|environment|box_11</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>c145b8e8-f01e-48ef-80bb-3a7bc103f6bb</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.864567, -0.168264, -0.473508, 0.000000, -0.354610, 0.871928, 0.337629, 0.000000, 0.356054, 0.459814, -0.813508, 0.000000, 2.506572, 10.044331, -25.276205, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
                     <_ID>demo_full|environment|tree_12</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>d786a59a-323f-4c64-8490-4daca4376c13</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>1.704990, 0.000000, -1.455613, 0.000000, 0.000000, 2.241830, 0.000000, 0.000000, 1.455613, 0.000000, 1.704990, 0.000000, 18.739302, 7.769096, -108.177498, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -407,13 +522,32 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
-                    <_ID>demo_full|environment|box_6</_ID>
+                    <_ID>demo_full|environment|box_12</_ID>
                     <Id>box</Id>
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>d9c20d49-dcce-4cab-9a53-ce7a89672791</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>0.723319, 0.158580, -0.672058, 0.000000, -0.005744, 0.974620, 0.223790, 0.000000, 0.690490, -0.158011, 0.705872, 0.000000, -1.934837, 11.204380, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.503503, 0.161555, 0.848755, 0.000000, -0.057837, 0.973856, -0.219677, 0.000000, -0.862055, -0.159697, -0.480996, 0.000000, -1.934837, 14.212349, -31.922997, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_13</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>df67aa09-8a12-4660-9306-058af7b1968a</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.876433, -0.264994, -0.402049, 0.000000, -0.345830, 0.927394, 0.142627, 0.000000, 0.335063, 0.264044, -0.904441, 0.000000, -7.002967, 13.052299, -25.276205, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -429,9 +563,9 @@
                     <_ID>demo_full|environment|tree_13</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>New layer</_Layers>
+                    <_Layers>Trees</_Layers>
                     <Guid>e2a2a1ed-f005-49aa-ba14-b71738307f89</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <ParentGuid>dbcfef30-30a8-42eb-9922-14697141004e</ParentGuid>
                     <Transform>-2.407565, 0.000000, 0.476074, 0.000000, 0.000000, 2.454183, 0.000000, 0.000000, -0.476074, 0.000000, -2.407565, 0.000000, -55.778351, 14.455582, -54.628208, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
@@ -445,13 +579,32 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
-                    <_ID>demo_full|environment|box_7</_ID>
+                    <_ID>demo_full|environment|box_14</_ID>
                     <Id>box</Id>
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>e2ec76b7-f7a6-4b38-b2da-f73487c624b3</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>0.705836, 0.000000, -0.708375, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.708375, 0.000000, 0.705836, 0.000000, 0.271610, 11.204380, -10.209551, 1.000000</Transform>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.476455, 0.003080, 0.879193, 0.000000, 0.000000, 0.999994, -0.003503, 0.000000, -0.879198, -0.001669, -0.476452, 0.000000, 0.271610, 14.212349, -31.922997, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_15</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>f56c8d71-876c-41f0-a381-dbca3fdece62</Guid>
+                    <ParentGuid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</ParentGuid>
+                    <Transform>-0.876433, -0.264994, -0.402049, 0.000000, -0.345830, 0.927394, 0.142627, 0.000000, 0.335063, 0.264044, -0.904441, 0.000000, -0.704838, 9.668083, -25.276205, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
@@ -1076,7 +1229,23 @@
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>
+            <Object category="_Group">
+                <Attributes>
+                    <Id>Trees</Id>
+                    <Guid>dbcfef30-30a8-42eb-9922-14697141004e</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000</Transform>
+                </Attributes>
+            </Object>
+            <Object category="_Group">
+                <Attributes>
+                    <Id>boxes</Id>
+                    <Guid>29410392-cb24-4bc9-a9fb-18aa4d6a2b1e</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000</Transform>
+                </Attributes>
+            </Object>
         </Entities>
-        <Global WorldCenter="-5.342445,7.042759,-189.188492,1.000000" WorldExtents="169.724655,68.603119,449.718597,0.000000" PostEffectPreset="Default" _Layers="Default;New layer" GlobalLightTransform="-0.270318, -0.644360, 0.715351, 0.000000, 0.875152, -0.474150, -0.096391, 0.000000, 0.401295, 0.599985, 0.692085, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000" />
+        <Global WorldCenter="-5.342445,13.850645,-189.188492,1.000000" WorldExtents="169.724655,54.987350,449.718597,0.000000" PostEffectPreset="Default" _Layers="Default;New layer;Trees" GlobalLightTransform="-0.270318, -0.644360, 0.715351, 0.000000, 0.875152, -0.474150, -0.096391, 0.000000, 0.401295, 0.599985, 0.692085, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000" />
     </NebulaLevel>
 </Level>
