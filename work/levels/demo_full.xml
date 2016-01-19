@@ -3,6 +3,7 @@
     <NebulaLevel Version="2" name="demo_full" id="demo_full">
         <Layers>
             <Layer name="Default" autoload="true" visible="true" locked="false" />
+            <Layer name="New layer" autoload="true" visible="true" locked="false" />
         </Layers>
         <Entities>
             <Object category="_Environment">
@@ -10,13 +11,14 @@
                     <_ID>demo_full|environment|tree_0</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>00054b3c-c3e0-4c63-b603-bbbbd6c7e4f0</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>-1.694285, 0.000000, 0.335030, 0.000000, 0.000000, 1.727092, 0.000000, 0.000000, -0.335030, 0.000000, -1.694285, 0.000000, -52.462570, 14.455582, -34.347862, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -28,15 +30,35 @@
                     <_ID>demo_full|environment|tree_1</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>00aa0eb8-7afa-4e0f-baf1-3a6fdd69c8b4</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 13.988194, 7.769096, -115.297371, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_0</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>082e7283-7a37-4890-b2e8-f39358dfd4b3</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>-0.876433, -0.264994, -0.402049, 0.000000, -0.345830, 0.927394, 0.142627, 0.000000, 0.335063, 0.264044, -0.904441, 0.000000, -7.002967, 10.044331, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -46,13 +68,14 @@
                     <_ID>demo_full|environment|tree_2</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>0c4b8c9f-12fa-4b78-85ca-69c52bce07d3</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>-1.860391, 0.000000, 0.367876, 0.000000, 0.000000, 1.896414, 0.000000, 0.000000, -0.367876, 0.000000, -1.860391, 0.000000, -41.740128, 14.455582, -44.307533, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -64,13 +87,14 @@
                     <_ID>demo_full|environment|tree_3</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>13d847ea-21fb-4975-8bea-115d7788bcda</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 14.071887, 7.769096, -100.154198, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -82,13 +106,14 @@
                     <_ID>demo_full|environment|tree_4</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>185b7030-b666-481c-bdc4-ace029ae7339</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.704990, 0.000000, -1.455613, 0.000000, 0.000000, 2.241830, 0.000000, 0.000000, 1.455613, 0.000000, 1.704990, 0.000000, 19.779671, 2.690096, -86.775452, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -100,15 +125,35 @@
                     <_ID>demo_full|environment|tree_5</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>1d15faf8-7ba7-43f0-9363-116e69fa4d10</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>-0.981005, 0.000000, 0.193985, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.193985, 0.000000, -0.981005, 0.000000, -37.319664, 14.455582, -56.160091, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_1</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>27339fdc-ce6a-452a-ad6e-aa47f571c356</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>-0.579716, -0.000656, -0.814818, 0.000000, 0.000000, -1.000000, 0.000805, 0.000000, -0.814818, 0.000466, 0.579716, 0.000000, 4.198581, 10.044331, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -118,15 +163,35 @@
                     <_ID>demo_full|environment|tree_6</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>27fe4ad1-982c-4ba9-97bc-fc34ef11cb68</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.946215, 0.000000, 0.000000, 0.000000, 0.000000, 1.946215, 0.000000, 0.000000, 0.000000, 0.000000, 1.946215, 0.000000, -41.740128, 14.455582, -64.515053, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_2</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>2b231944-f12f-4570-81bf-f3a3eaf89883</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>-0.876433, -0.264994, -0.402049, 0.000000, -0.345830, 0.927394, 0.142627, 0.000000, 0.335063, 0.264044, -0.904441, 0.000000, -0.704838, 9.668083, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -143,7 +208,8 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>level/pad3</Graphics>
-                    <CollisionEnabled>true</CollisionEnabled>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>false</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
@@ -151,18 +217,38 @@
             </Object>
             <Object category="_Environment">
                 <Attributes>
-                    <_ID>demo_full|environment|box_0</_ID>
+                    <_ID>demo_full|environment|box_3</_ID>
                     <Id>box</Id>
                     <_Level>demo_full</_Level>
                     <_Layers>Default</_Layers>
                     <Guid>4f47ff45-930d-4f2f-ac29-385762b9f12c</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>0.705836, 0.000000, -0.708375, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.708375, 0.000000, 0.705836, 0.000000, -4.828682, 1.821405, 3.608736, 1.000000</Transform>
+                    <Transform>0.705836, -0.003549, -0.708366, 0.000000, 0.000000, 0.999987, -0.005009, 0.000000, 0.708375, 0.003536, 0.705827, 0.000000, 6.088691, 13.339228, -10.209551, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
-                    <DynamicObject>false</DynamicObject>
+                    <DynamicObject>true</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_4</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>51a606dc-f29b-4f80-8ab6-2ebfb60c3bd6</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>-0.864567, -0.168264, -0.473508, 0.000000, -0.354610, 0.871928, 0.337629, 0.000000, 0.356054, 0.459814, -0.813508, 0.000000, 2.506572, 10.044331, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -179,6 +265,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>level/envvironmentLevel</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -190,13 +277,14 @@
                     <_ID>demo_full|environment|tree_7</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>910c3455-f9af-4a39-9a3b-22148ea8525b</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>0.923026, 0.000000, -0.384738, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.384738, 0.000000, 0.923026, 0.000000, -33.707306, 14.455582, -46.416218, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -208,15 +296,35 @@
                     <_ID>demo_full|environment|tree_8</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>928bc7c8-dfe1-4b8b-be03-563565347343</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.704990, 0.000000, -1.455613, 0.000000, 0.000000, 2.241830, 0.000000, 0.000000, 1.455613, 0.000000, 1.704990, 0.000000, 13.852341, 7.769096, -94.898743, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_5</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>96aff4ad-328e-4010-b0d5-a8fc47b53e13</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>-0.751002, 0.000000, -0.660299, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.660299, 0.000000, -0.751002, 0.000000, -4.476812, 10.044331, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -226,13 +334,14 @@
                     <_ID>demo_full|environment|tree_9</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>9c695377-fab2-45c9-9a26-0683858b1373</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>-0.981005, 0.000000, 0.193985, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.193985, 0.000000, -0.981005, 0.000000, -33.066936, 14.455582, -34.347862, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -244,13 +353,14 @@
                     <_ID>demo_full|environment|tree_10</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>a4c33aa3-5aa3-4553-b140-1f1918c10009</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>-0.981005, 0.000000, 0.193985, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.193985, 0.000000, -0.981005, 0.000000, -41.740128, 14.455582, -33.860283, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -262,13 +372,14 @@
                     <_ID>demo_full|environment|tree_11</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>ac3455da-d37d-4f4f-8434-a12bb7d88593</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>0.471235, 0.000000, 0.882008, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.882008, 0.000000, 0.471235, 0.000000, -51.747662, 14.455582, -46.416218, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
@@ -280,15 +391,35 @@
                     <_ID>demo_full|environment|tree_12</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>d786a59a-323f-4c64-8490-4daca4376c13</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.704990, 0.000000, -1.455613, 0.000000, 0.000000, 2.241830, 0.000000, 0.000000, 1.455613, 0.000000, 1.704990, 0.000000, 18.739302, 7.769096, -108.177498, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_6</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>d9c20d49-dcce-4cab-9a53-ce7a89672791</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>0.723319, 0.158580, -0.672058, 0.000000, -0.005744, 0.974620, 0.223790, 0.000000, 0.690490, -0.158011, 0.705872, 0.000000, -1.934837, 11.204380, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -298,15 +429,35 @@
                     <_ID>demo_full|environment|tree_13</_ID>
                     <Id>tree</Id>
                     <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
+                    <_Layers>New layer</_Layers>
                     <Guid>e2a2a1ed-f005-49aa-ba14-b71738307f89</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>-2.407565, 0.000000, 0.476074, 0.000000, 0.000000, 2.454183, 0.000000, 0.000000, -0.476074, 0.000000, -2.407565, 0.000000, -55.778351, 14.455582, -54.628208, 1.000000</Transform>
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>demo_full|environment|box_7</_ID>
+                    <Id>box</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>e2ec76b7-f7a6-4b38-b2da-f73487c624b3</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>0.705836, 0.000000, -0.708375, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.708375, 0.000000, 0.705836, 0.000000, 0.271610, 11.204380, -10.209551, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>true</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <Instanced>false</Instanced>
                 </Attributes>
@@ -418,6 +569,75 @@
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
                     <OneWayTrigger>false</OneWayTrigger>
                     <EntityScript>demoproject/trigger3</EntityScript>
+                </Attributes>
+            </Object>
+            <Object category="Player">
+                <Attributes>
+                    <_ID>demo_full|object|Player|dummychar_0</_ID>
+                    <Id>dummychar</Id>
+                    <_Level>demo_full</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>7e4a013e-cd5f-406d-a561-4459729bd086</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 2.207296, 1.444962, 1.000000</Transform>
+                    <Name>Dummy Character</Name>
+                    <Placeholder>placeholder/box</Placeholder>
+                    <UseAnim>use</UseAnim>
+                    <StrafeLeftAnim>strafeLeft</StrafeLeftAnim>
+                    <UseReversedAnim>false</UseReversedAnim>
+                    <CameraOffset>0.000000,1.500000,0.000000,0.000000</CameraOffset>
+                    <CameraDistance>5.000000</CameraDistance>
+                    <CameraMinDistance>1.000000</CameraMinDistance>
+                    <LoopStartAnimation>true</LoopStartAnimation>
+                    <Graphics>placeholder/dummyCharacter</Graphics>
+                    <UseFallbackAnim>false</UseFallbackAnim>
+                    <StartAnimation>standing</StartAnimation>
+                    <CameraFocus>true</CameraFocus>
+                    <Instanced>false</Instanced>
+                    <JumpAnim>jump</JumpAnim>
+                    <StrafeRightAnim>strafeRight</StrafeRightAnim>
+                    <InputMouseGrab>false</InputMouseGrab>
+                    <InputFocus>true</InputFocus>
+                    <IdleAnim>standing</IdleAnim>
+                    <DeathAnim>death</DeathAnim>
+                    <CameraAngularGain>-50.000000</CameraAngularGain>
+                    <CameraHighStop>45.000000</CameraHighStop>
+                    <Static>false</Static>
+                    <CameraLinearGain>-30.000000</CameraLinearGain>
+                    <CameraDefaultTheta>-0.350000</CameraDefaultTheta>
+                    <CameraDistanceStep>1.000000</CameraDistanceStep>
+                    <CameraMaxDistance>125.000000</CameraMaxDistance>
+                    <AnimEvents>false</AnimEvents>
+                    <CameraAngularVelocity>1.000000</CameraAngularVelocity>
+                    <WalkAnim>runForward</WalkAnim>
+                    <CastShadows>true</CastShadows>
+                    <BackAnim>runBackward</BackAnim>
+                    <CharacterSet>dummychar</CharacterSet>
+                    <AnimSet>dummychar</AnimSet>
+                    <CameraDefaultRho>0.175000</CameraDefaultRho>
+                    <LoadSynced>false</LoadSynced>
+                    <CameraLowStop>-45.000000</CameraLowStop>
+                    <UseStrafeAnim>true</UseStrafeAnim>
+                    <AngularSmoothing>false</AngularSmoothing>
+                    <CapsuleHover>0.000000</CapsuleHover>
+                    <AirVelocityGain>0.050000</AirVelocityGain>
+                    <TargetEntityId>0</TargetEntityId>
+                    <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
+                    <JumpSpeed>10.000000</JumpSpeed>
+                    <CapsuleHeight>2.000000</CapsuleHeight>
+                    <CrouchingCapsuleHeight>1.500000</CrouchingCapsuleHeight>
+                    <VelocityGain>0.950000</VelocityGain>
+                    <Physics></Physics>
+                    <Moving>false</Moving>
+                    <RelVelocity>0.200000</RelVelocity>
+                    <JumpHeight>20.000000</JumpHeight>
+                    <CharacterShape>capsule</CharacterShape>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <CapsuleRadius>0.500000</CapsuleRadius>
+                    <Following>false</Following>
+                    <MaxVelocity>0.700000</MaxVelocity>
+                    <CollisionFeedback>true</CollisionFeedback>
+                    <EntityScript>demoproject/player</EntityScript>
                 </Attributes>
             </Object>
             <Object category="AnimatedPhysics">
@@ -629,74 +849,6 @@
                     <InputFocus>true</InputFocus>
                     <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
                     <MayaCameraRenderCenterOfInterest>false</MayaCameraRenderCenterOfInterest>
-                </Attributes>
-            </Object>
-            <Object category="Player">
-                <Attributes>
-                    <_ID>demo_full|object|Player|dummychar_0</_ID>
-                    <Id>dummychar</Id>
-                    <_Level>demo_full</_Level>
-                    <_Layers>Default</_Layers>
-                    <Guid>be91c296-39ce-4df3-9945-be1e5363588b</Guid>
-                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
-                    <Transform>-0.917179, 0.000000, 0.398475, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.398475, 0.000000, -0.917179, 0.000000, 0.000000, 1.893922, -202.920334, 1.000000</Transform>
-                    <Name>Dummy Character</Name>
-                    <Placeholder>placeholder/box</Placeholder>
-                    <UseAnim>use</UseAnim>
-                    <StrafeLeftAnim>strafeLeft</StrafeLeftAnim>
-                    <UseReversedAnim>false</UseReversedAnim>
-                    <CameraOffset>0.000000,1.500000,0.000000,0.000000</CameraOffset>
-                    <CameraDistance>5.000000</CameraDistance>
-                    <CameraMinDistance>1.000000</CameraMinDistance>
-                    <LoopStartAnimation>true</LoopStartAnimation>
-                    <Graphics>placeholder/dummyCharacter</Graphics>
-                    <UseFallbackAnim>false</UseFallbackAnim>
-                    <StartAnimation>standing</StartAnimation>
-                    <CameraFocus>true</CameraFocus>
-                    <Instanced>false</Instanced>
-                    <JumpAnim>jump</JumpAnim>
-                    <StrafeRightAnim>strafeRight</StrafeRightAnim>
-                    <InputMouseGrab>false</InputMouseGrab>
-                    <InputFocus>true</InputFocus>
-                    <IdleAnim>standing</IdleAnim>
-                    <DeathAnim>death</DeathAnim>
-                    <CameraAngularGain>-50.000000</CameraAngularGain>
-                    <CameraHighStop>45.000000</CameraHighStop>
-                    <Static>false</Static>
-                    <CameraLinearGain>-30.000000</CameraLinearGain>
-                    <CameraDefaultTheta>-0.350000</CameraDefaultTheta>
-                    <CameraDistanceStep>1.000000</CameraDistanceStep>
-                    <CameraMaxDistance>125.000000</CameraMaxDistance>
-                    <AnimEvents>false</AnimEvents>
-                    <CameraAngularVelocity>1.000000</CameraAngularVelocity>
-                    <WalkAnim>runForward</WalkAnim>
-                    <CastShadows>true</CastShadows>
-                    <BackAnim>runBackward</BackAnim>
-                    <CharacterSet>dummychar</CharacterSet>
-                    <AnimSet>dummychar</AnimSet>
-                    <CameraDefaultRho>0.175000</CameraDefaultRho>
-                    <LoadSynced>false</LoadSynced>
-                    <CameraLowStop>-45.000000</CameraLowStop>
-                    <UseStrafeAnim>true</UseStrafeAnim>
-                    <CapsuleHover>0.000000</CapsuleHover>
-                    <AirVelocityGain>0.050000</AirVelocityGain>
-                    <TargetEntityId>0</TargetEntityId>
-                    <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <JumpSpeed>10.000000</JumpSpeed>
-                    <CapsuleHeight>2.000000</CapsuleHeight>
-                    <CrouchingCapsuleHeight>1.500000</CrouchingCapsuleHeight>
-                    <VelocityGain>0.950000</VelocityGain>
-                    <Physics></Physics>
-                    <Moving>false</Moving>
-                    <RelVelocity>99.000000</RelVelocity>
-                    <JumpHeight>20.000000</JumpHeight>
-                    <CharacterShape>capsule</CharacterShape>
-                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
-                    <CapsuleRadius>0.500000</CapsuleRadius>
-                    <Following>false</Following>
-                    <MaxVelocity>5.000000</MaxVelocity>
-                    <CollisionFeedback>false</CollisionFeedback>
-                    <EntityScript></EntityScript>
                 </Attributes>
             </Object>
             <Object category="Trigger">
@@ -925,6 +1077,6 @@
                 </Attributes>
             </Object>
         </Entities>
-        <Global WorldCenter="-5.342445,7.042759,-189.188492,1.000000" WorldExtents="169.724655,68.603119,449.718597,0.000000" PostEffectPreset="Default" _Layers="Default" GlobalLightTransform="-0.270318, -0.644360, 0.715351, 0.000000, 0.875152, -0.474150, -0.096391, 0.000000, 0.401295, 0.599985, 0.692085, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000" />
+        <Global WorldCenter="-5.342445,7.042759,-189.188492,1.000000" WorldExtents="169.724655,68.603119,449.718597,0.000000" PostEffectPreset="Default" _Layers="Default;New layer" GlobalLightTransform="-0.270318, -0.644360, 0.715351, 0.000000, 0.875152, -0.474150, -0.096391, 0.000000, 0.401295, 0.599985, 0.692085, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000" />
     </NebulaLevel>
 </Level>

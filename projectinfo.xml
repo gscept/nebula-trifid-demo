@@ -42,6 +42,7 @@
             <Attr name="AudioTool" value="programs:FMOD SoundSystem/"/>
             <Attr name="AudioSrcDir" value="src:audio"/>
 
+			<Attr name="AssetBatcher" value="bin:assetbatcher"/>
 			<Attr name="AudioBatcher" value="bin:audiobatcher3"/>
             <Attr name="GraphicsBatcher" value="bin:fbxbatcher3"/>
             <Attr name="ModelBatcher" value="bin:modelbatcher3"/>
