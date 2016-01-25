@@ -12,5 +12,6 @@ SUBDIRS(
 demoproject
 networkdemoproject
 testviewer
+consoletest
 )
 ENDIF()
