@@ -17,6 +17,7 @@
 #include "netdemogameapplication.h"
 #include "coregraphics/displaymode.h"
 #include "uicommands.h"
+#include "multiplayerfeatureunit.h"
 
 
 namespace Demos
@@ -78,7 +79,7 @@ DemoProjectApplication::SetupStateHandlers()
 	gameState->SetSetupMode(DemoGameState::LoadLevel);
 	gameState->SetName("DemoState");
 	// select the level to be loaded explicitly instead of the default one
-	gameState->SetLevelName("net");
+	gameState->SetLevelName("map");
 
 	this->AddStateHandler(gameState.get());
 
@@ -142,6 +143,7 @@ DemoProjectApplication::SetupGameFeatures()
 	this->gameServer->AttachGameFeature(this->uiFeature.cast<Game::FeatureUnit>());
 	this->gameServer->AttachGameFeature(this->postEffectFeature.cast<Game::FeatureUnit>());
 	
+	this->multiplayerFeature->Setup(MultiplayerFeature::MultiplayerFeatureUnit::LAN);
 
 	Commands::ScriptingCommands::Register();
 	Commands::PhysicsProtocol::Register();

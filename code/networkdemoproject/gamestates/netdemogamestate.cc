@@ -19,6 +19,7 @@
 #include "scriptingfeature/scriptingprotocol.h"
 #include "effects/effectsfeatureunit.h"
 #include "networkdemoproject/netdemogameapplication.h"
+#include "networkserver.h"
 
 namespace Demos
 {
@@ -128,13 +129,13 @@ DemoGameState::HandleInput()
 	{
 		MultiplayerFeature::NetworkGame::Instance()->CreateRoom();
 	}
-	if (kbd->KeyDown(Input::Key::U))
-	{
-		MultiplayerFeature::NetworkGame::Instance()->UnpublishFromMaster();
-	}
 	if (kbd->KeyDown(Input::Key::R))
 	{
 		MultiplayerFeature::NetworkGame::Instance()->UpdateRoomList();
+	}
+	if (kbd->KeyDown(Input::Key::Z))
+	{
+		MultiplayerFeature::NetworkServer::Instance()->SearchForGames();
 	}
 	if (kbd->KeyDown(Input::Key::J))
 	{
@@ -144,7 +145,7 @@ DemoGameState::HandleInput()
 	}
 	if (kbd->KeyDown(Input::Key::G))
 	{
-		App::GameApplication::Instance()->FindStateHandlerByName("DemoState").cast<BaseGameFeature::GameStateHandler>()->SetLevelName("net");
+		App::GameApplication::Instance()->FindStateHandlerByName("DemoState").cast<BaseGameFeature::GameStateHandler>()->SetLevelName("map");
 		App::GameApplication::Instance()->FindStateHandlerByName("DemoState").cast<BaseGameFeature::GameStateHandler>()->SetSetupMode(BaseGameFeature::GameStateHandler::LoadNetworkedLevel);
 		App::GameApplication::Instance()->RequestState("DemoState");
 	}
