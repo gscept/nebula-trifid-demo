@@ -139,13 +139,13 @@ DemoGameState::HandleInput()
 	}
 	if (kbd->KeyDown(Input::Key::J))
 	{
-		Util::String id = MultiplayerFeature::NetworkGame::Instance()->GetMasterList()->GetString(Attr::Id,0);
-		MultiplayerFeature::NetworkGame::Instance()->JoinRoom(id);
+	//	Util::String id = MultiplayerFeature::NetworkGame::Instance()->GetMasterList()->GetString(Attr::Id,0);
+		MultiplayerFeature::NetworkGame::Instance()->JoinRoom("127.0.0.1|61111",true);
 
 	}
 	if (kbd->KeyDown(Input::Key::G))
 	{
-		App::GameApplication::Instance()->FindStateHandlerByName("DemoState").cast<BaseGameFeature::GameStateHandler>()->SetLevelName("map");
+		App::GameApplication::Instance()->FindStateHandlerByName("DemoState").cast<BaseGameFeature::GameStateHandler>()->SetLevelName("net");
 		App::GameApplication::Instance()->FindStateHandlerByName("DemoState").cast<BaseGameFeature::GameStateHandler>()->SetSetupMode(BaseGameFeature::GameStateHandler::LoadNetworkedLevel);
 		App::GameApplication::Instance()->RequestState("DemoState");
 	}

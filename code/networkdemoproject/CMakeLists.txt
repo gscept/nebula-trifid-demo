@@ -1,22 +1,6 @@
 #-------------------------------------------------------------------------------
-# Toolkit
+# netdemo
 #-------------------------------------------------------------------------------
-INCLUDE_DIRECTORIES(${Nebula3_SOURCE_DIR}/code/application
-                    ${Nebula3_SOURCE_DIR}/code/addons
-					${Nebula3_SOURCE_DIR}/code/addons/multiplayer
-                    ${Nebula3_SOURCE_DIR}/code/application/basegamefeature
-                    ${Nebula3_SOURCE_DIR}/code/application/corefeature
-                    ${Nebula3_SOURCE_DIR}/code/application/graphicsfeature
-                    ${Nebula3_SOURCE_DIR}/code/application/physicsfeature
-					${Nebula3_SOURCE_DIR}/code/extlibs/raknet/source
-                    ${Nebula3_SOURCE_DIR}/code/extlibs
-                    ${Nebula3_SOURCE_DIR}/code/foundation
-                    ${Nebula3_SOURCE_DIR}/code/render
-                    ${Nebula3_SOURCE_DIR}/code/tools
-                    ${Nebula3_SOURCE_DIR}/code/toolkit
-                    ${Nebula3_SOURCE_DIR}/code/tests/
-                    ${Nebula3_SOURCE_DIR}/code
-)
 
 FILE(GLOB SRC "gamestates/*.cc")
 FILE(GLOB HEAD "gamestates/*.h")
@@ -45,10 +29,10 @@ IF(N_USE_PRECOMPILED_HEADERS)
 	N_SET_PCH(netdemoproject  stdneb.h stdneb.cc ../)
 ENDIF()
 ADD_DEPENDENCIES(netdemoproject
-	application
+	application_features ui multiplayer
 	)
 TARGET_LINK_LIBRARIES(netdemoproject 
-        application
+        application_features ui multiplayer
 )
 
 

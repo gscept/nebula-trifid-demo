@@ -19,6 +19,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -38,6 +39,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -57,6 +59,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -76,6 +79,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -95,6 +99,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -114,6 +119,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -133,6 +139,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -152,6 +159,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -171,6 +179,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -190,6 +199,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -209,6 +219,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -228,6 +239,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -247,6 +259,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>level/pad3</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>false</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -266,6 +279,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -285,6 +299,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -304,6 +319,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -323,6 +339,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -342,6 +359,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>level/envvironmentLevel</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -361,6 +379,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -380,6 +399,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -399,6 +419,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -418,6 +439,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -437,6 +459,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -456,6 +479,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -475,6 +499,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -494,6 +519,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -513,6 +539,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -532,6 +559,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -551,6 +579,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -570,6 +599,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>props/tree</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
@@ -589,6 +619,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -608,6 +639,7 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>examples/box</Graphics>
+                    <StartAnimation></StartAnimation>
                     <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>true</DynamicObject>
@@ -624,16 +656,16 @@
                     <Guid>0359440b-d91c-4c45-933b-7cd649917077</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>5.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 15.306721, 0.000000, -12.130000, 0.446687, -227.929993, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/triggerscript</EntityScript>
                 </Attributes>
             </Object>
@@ -650,13 +682,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -673,10 +706,11 @@
                     <Placeholder></Placeholder>
                     <Graphics>level/Artefact</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
                     <EntityScript></EntityScript>
                 </Attributes>
             </Object>
@@ -689,16 +723,16 @@
                     <Guid>20eced23-dd3b-4a23-9fbe-33ec4bc6acca</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>6.084546, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 11.210710, 0.000000, 14.170000, 1.110000, -225.029999, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>trigger2</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>false</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>false</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/trigger2</EntityScript>
                 </Attributes>
             </Object>
@@ -711,16 +745,16 @@
                     <Guid>604e7ed3-323a-4670-82f8-b1e7b20d986d</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>7.014285, 0.000000, 0.000000, 0.000000, 0.000000, 7.950746, 0.000000, 0.000000, 0.000000, 0.000000, 9.549112, 0.000000, 2.047503, 1.095017, -363.239044, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/trigger3</EntityScript>
                 </Attributes>
             </Object>
@@ -735,61 +769,63 @@
                     <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 2.207296, 1.444962, 1.000000</Transform>
                     <Name>Dummy Character</Name>
                     <Placeholder>placeholder/box</Placeholder>
-                    <UseAnim>use</UseAnim>
-                    <StrafeLeftAnim>strafeLeft</StrafeLeftAnim>
-                    <UseReversedAnim>false</UseReversedAnim>
-                    <CameraOffset>0.000000,1.500000,0.000000,0.000000</CameraOffset>
-                    <CameraDistance>5.000000</CameraDistance>
-                    <CameraMinDistance>1.000000</CameraMinDistance>
-                    <LoopStartAnimation>true</LoopStartAnimation>
                     <Graphics>placeholder/dummyCharacter</Graphics>
-                    <UseFallbackAnim>false</UseFallbackAnim>
-                    <StartAnimation>standing</StartAnimation>
-                    <CameraFocus>true</CameraFocus>
-                    <Instanced>false</Instanced>
-                    <JumpAnim>jump</JumpAnim>
-                    <StrafeRightAnim>strafeRight</StrafeRightAnim>
-                    <InputMouseGrab>false</InputMouseGrab>
+                    <WalkAnim>runForward</WalkAnim>
                     <InputFocus>true</InputFocus>
-                    <IdleAnim>standing</IdleAnim>
-                    <DeathAnim>death</DeathAnim>
+                    <Instanced>false</Instanced>
+                    <UseReversedAnim>false</UseReversedAnim>
+                    <AnimEvents>false</AnimEvents>
                     <CameraAngularGain>-50.000000</CameraAngularGain>
                     <CameraHighStop>45.000000</CameraHighStop>
-                    <Static>false</Static>
-                    <CameraLinearGain>-30.000000</CameraLinearGain>
-                    <CameraDefaultTheta>-0.350000</CameraDefaultTheta>
-                    <CameraDistanceStep>1.000000</CameraDistanceStep>
-                    <CameraMaxDistance>125.000000</CameraMaxDistance>
-                    <AnimEvents>false</AnimEvents>
+                    <CameraDefaultRho>0.175000</CameraDefaultRho>
+                    <StrafeRightAnim>strafeRight</StrafeRightAnim>
                     <CameraAngularVelocity>1.000000</CameraAngularVelocity>
-                    <WalkAnim>runForward</WalkAnim>
+                    <CameraDefaultTheta>-0.350000</CameraDefaultTheta>
                     <CastShadows>true</CastShadows>
                     <BackAnim>runBackward</BackAnim>
-                    <CharacterSet>dummychar</CharacterSet>
-                    <AnimSet>dummychar</AnimSet>
-                    <CameraDefaultRho>0.175000</CameraDefaultRho>
-                    <LoadSynced>false</LoadSynced>
-                    <CameraLowStop>-45.000000</CameraLowStop>
+                    <IdleAnim>standing</IdleAnim>
+                    <StrafeLeftAnim>strafeLeft</StrafeLeftAnim>
+                    <JumpAnim>jump</JumpAnim>
                     <UseStrafeAnim>true</UseStrafeAnim>
-                    <AngularSmoothing>false</AngularSmoothing>
-                    <CapsuleHover>0.000000</CapsuleHover>
-                    <AirVelocityGain>0.050000</AirVelocityGain>
-                    <TargetEntityId>0</TargetEntityId>
-                    <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
+                    <UseFallbackAnim>false</UseFallbackAnim>
+                    <CameraOffset>0.000000,1.500000,0.000000,0.000000</CameraOffset>
+                    <CameraDistanceStep>1.000000</CameraDistanceStep>
+                    <CharacterSet>dummychar</CharacterSet>
+                    <Static>false</Static>
+                    <CameraMinDistance>1.000000</CameraMinDistance>
+                    <LoadSynced>false</LoadSynced>
+                    <CameraLinearGain>-30.000000</CameraLinearGain>
+                    <AnimSet>dummychar</AnimSet>
+                    <InputMouseGrab>false</InputMouseGrab>
+                    <CameraMaxDistance>125.000000</CameraMaxDistance>
+                    <DeathAnim>death</DeathAnim>
+                    <LoopStartAnimation>true</LoopStartAnimation>
+                    <CameraFocus>true</CameraFocus>
+                    <UseAnim>use</UseAnim>
+                    <CameraDistance>5.000000</CameraDistance>
+                    <CameraLowStop>-45.000000</CameraLowStop>
+                    <StartAnimation>standing</StartAnimation>
                     <JumpSpeed>10.000000</JumpSpeed>
-                    <CapsuleHeight>2.000000</CapsuleHeight>
-                    <CrouchingCapsuleHeight>1.500000</CrouchingCapsuleHeight>
                     <VelocityGain>0.950000</VelocityGain>
-                    <Physics></Physics>
-                    <Moving>false</Moving>
-                    <RelVelocity>0.200000</RelVelocity>
-                    <JumpHeight>20.000000</JumpHeight>
                     <CharacterShape>capsule</CharacterShape>
-                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
                     <CapsuleRadius>0.500000</CapsuleRadius>
-                    <Following>false</Following>
+                    <CapsuleHeight>2.000000</CapsuleHeight>
+                    <AirVelocityGain>0.050000</AirVelocityGain>
+                    <JumpHeight>20.000000</JumpHeight>
                     <MaxVelocity>0.700000</MaxVelocity>
+                    <Moving>false</Moving>
+                    <TargetEntityId>0</TargetEntityId>
+                    <AngularSmoothing>false</AngularSmoothing>
+                    <CrouchingCapsuleHeight>1.500000</CrouchingCapsuleHeight>
+                    <CapsuleHover>0.000000</CapsuleHover>
                     <CollisionFeedback>true</CollisionFeedback>
+                    <Following>false</Following>
+                    <Physics></Physics>
+                    <PhysicMaterial>InvalidMaterial</PhysicMaterial>
+                    <Mass>80.000000</Mass>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <RelVelocity>0.200000</RelVelocity>
+                    <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
                     <EntityScript>demoproject/player</EntityScript>
                 </Attributes>
             </Object>
@@ -806,13 +842,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -827,12 +864,12 @@
                     <Transform>27.258801, 0.000000, 0.000000, 0.000000, 0.000000, 27.258801, 0.000000, 0.000000, 0.000000, 0.000000, 27.258801, 0.000000, -8.433371, 0.000000, -72.180206, 1.000000</Transform>
                     <Name>Post Effect Sphere</Name>
                     <Graphics>system/triggersphere</Graphics>
-                    <PEDefaultEntity>false</PEDefaultEntity>
-                    <AmbienceBubbleEnabled>true</AmbienceBubbleEnabled>
-                    <PEBlendTime>2.000000</PEBlendTime>
                     <PEShapeType>sphere</PEShapeType>
-                    <PostEffectPreset>lila</PostEffectPreset>
                     <AmbienceBubblePriority>0</AmbienceBubblePriority>
+                    <PEBlendTime>2.000000</PEBlendTime>
+                    <PostEffectPreset>lila</PostEffectPreset>
+                    <AmbienceBubbleEnabled>true</AmbienceBubbleEnabled>
+                    <PEDefaultEntity>false</PEDefaultEntity>
                 </Attributes>
             </Object>
             <Object category="Trigger">
@@ -844,16 +881,16 @@
                     <Guid>8f613ad3-0b8c-4815-9e0a-dad54985e860</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>38.189568, 0.000000, 0.000000, 0.000000, 0.000000, 4.433021, 0.000000, 0.000000, 0.000000, 0.000000, 18.540430, 0.000000, -5.510659, 0.419929, -327.055481, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>
@@ -870,13 +907,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -893,13 +931,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -913,12 +952,12 @@
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000</Transform>
                     <Name></Name>
-                    <CameraFocus>true</CameraFocus>
-                    <InputMouseGrab>false</InputMouseGrab>
-                    <MayaCameraCenterOfInterest>0.000000,0.000000,0.000000,0.000000</MayaCameraCenterOfInterest>
                     <InputFocus>true</InputFocus>
-                    <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
+                    <MayaCameraCenterOfInterest>0.000000,0.000000,0.000000,0.000000</MayaCameraCenterOfInterest>
                     <MayaCameraRenderCenterOfInterest>false</MayaCameraRenderCenterOfInterest>
+                    <InputMouseGrab>false</InputMouseGrab>
+                    <CameraFocus>true</CameraFocus>
+                    <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
                 </Attributes>
             </Object>
             <Object category="Graphics">
@@ -934,10 +973,11 @@
                     <Placeholder></Placeholder>
                     <Graphics>level/pad2</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
                     <EntityScript></EntityScript>
                 </Attributes>
             </Object>
@@ -954,10 +994,11 @@
                     <Placeholder></Placeholder>
                     <Graphics>level/pad1</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
                     <EntityScript></EntityScript>
                 </Attributes>
             </Object>
@@ -974,13 +1015,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -996,12 +1038,12 @@
                     <Name></Name>
                     <Placeholder>examples/camera</Placeholder>
                     <Graphics>examples/camera</Graphics>
-                    <CameraFocus>true</CameraFocus>
-                    <InputMouseGrab>false</InputMouseGrab>
-                    <MayaCameraCenterOfInterest>0.000000,0.000000,0.000000,0.000000</MayaCameraCenterOfInterest>
                     <InputFocus>true</InputFocus>
-                    <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
+                    <MayaCameraCenterOfInterest>0.000000,0.000000,0.000000,0.000000</MayaCameraCenterOfInterest>
                     <MayaCameraRenderCenterOfInterest>false</MayaCameraRenderCenterOfInterest>
+                    <InputMouseGrab>false</InputMouseGrab>
+                    <CameraFocus>true</CameraFocus>
+                    <MayaCameraDefaultUpVec>0.000000,1.000000,0.000000,1.000000</MayaCameraDefaultUpVec>
                 </Attributes>
             </Object>
             <Object category="Trigger">
@@ -1013,16 +1055,16 @@
                     <Guid>c3629acb-7a53-4996-87fb-b5143c12bd79</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>38.189568, 0.000000, 0.000000, 0.000000, 0.000000, 4.433021, 0.000000, 0.000000, 0.000000, 0.000000, 39.935928, 0.000000, -21.384106, 0.419933, -357.436218, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>
@@ -1035,16 +1077,16 @@
                     <Guid>c7519a2e-5380-48aa-8b71-ab93ba8b4358</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>38.189568, 0.000000, 0.000000, 0.000000, 0.000000, 4.433021, 0.000000, 0.000000, 0.000000, 0.000000, 50.611027, 0.000000, 50.776707, 0.419929, -269.750854, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>
@@ -1061,13 +1103,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -1080,16 +1123,16 @@
                     <Guid>c8082e7e-4bb4-4d67-8a8c-894cb2ed47aa</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>38.189568, 0.000000, 0.000000, 0.000000, 0.000000, 4.433021, 0.000000, 0.000000, 0.000000, 0.000000, 86.197029, 0.000000, 52.544128, 0.419961, -337.527740, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>
@@ -1106,13 +1149,14 @@
                     <Placeholder>placeholder/box</Placeholder>
                     <Graphics>level/door</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript></EntityScript>
                 </Attributes>
             </Object>
@@ -1129,13 +1173,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -1148,16 +1193,16 @@
                     <Guid>d26df788-abf8-478d-948e-34fc87c9cb23</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>38.189568, 0.000000, 0.000000, 0.000000, 0.000000, 4.433021, 0.000000, 0.000000, 0.000000, 0.000000, 67.312881, 0.000000, -21.384106, 0.419929, -283.868713, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>
@@ -1174,13 +1219,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -1197,13 +1243,14 @@
                     <Placeholder>examples/dummyground</Placeholder>
                     <Graphics>level/DeathObject</Graphics>
                     <Instanced>false</Instanced>
-                    <Static>false</Static>
                     <AnimEvents>false</AnimEvents>
                     <CastShadows>true</CastShadows>
+                    <Static>false</Static>
                     <LoadSynced>false</LoadSynced>
+                    <StartAnimation></StartAnimation>
+                    <CollisionFeedback>false</CollisionFeedback>
                     <JointNameLinking>true</JointNameLinking>
                     <CollisionDepthThreshold>0.001000</CollisionDepthThreshold>
-                    <CollisionFeedback>false</CollisionFeedback>
                     <EntityScript>demoproject/trap</EntityScript>
                 </Attributes>
             </Object>
@@ -1216,16 +1263,16 @@
                     <Guid>fa200e6b-b1c2-41a3-92cf-a9af5c1e040a</Guid>
                     <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
                     <Transform>38.189568, 0.000000, 0.000000, 0.000000, 0.000000, 4.433021, 0.000000, 0.000000, 0.000000, 0.000000, 18.540430, 0.000000, 34.150101, 0.419929, -364.546448, 1.000000</Transform>
-                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Name>TriggerBox</Name>
+                    <EntityTriggerRadius>0.000000</EntityTriggerRadius>
                     <Graphics>system/triggerbox</Graphics>
-                    <Shape>box</Shape>
-                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
-                    <TriggerActive>true</TriggerActive>
-                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
-                    <ReactivateTrigger>false</ReactivateTrigger>
                     <ReactivateTriggerTime>0.000000</ReactivateTriggerTime>
+                    <ReactivateTrigger>false</ReactivateTrigger>
                     <OneWayTrigger>false</OneWayTrigger>
+                    <TriggerTimeStamp>0.000000</TriggerTimeStamp>
+                    <TriggerPhaseTime>0.000000</TriggerPhaseTime>
+                    <TriggerActive>true</TriggerActive>
+                    <Shape>box</Shape>
                     <EntityScript>demoproject/traptrigger</EntityScript>
                 </Attributes>
             </Object>

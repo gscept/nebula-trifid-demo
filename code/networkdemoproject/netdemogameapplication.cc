@@ -79,7 +79,7 @@ DemoProjectApplication::SetupStateHandlers()
 	gameState->SetSetupMode(DemoGameState::LoadLevel);
 	gameState->SetName("DemoState");
 	// select the level to be loaded explicitly instead of the default one
-	gameState->SetLevelName("map");
+	gameState->SetLevelName("net");
 
 	this->AddStateHandler(gameState.get());
 
