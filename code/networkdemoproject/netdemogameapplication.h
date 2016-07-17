@@ -38,7 +38,7 @@ public:
 	/// close application
 	virtual void Close();
 
-private:
+//private:
 
 	/// setup application state handlers
 	virtual void SetupStateHandlers();

@@ -16,7 +16,7 @@
 #include "scriptingfeature/scriptingcommands.h"
 #include "netdemogameapplication.h"
 #include "coregraphics/displaymode.h"
-#include "uicommands.h"
+#include "ui/uicommands.h"
 #include "multiplayerfeatureunit.h"
 
 
@@ -158,6 +158,8 @@ DemoProjectApplication::SetupGameFeatures()
 	this->uiFeature->SetRenderDebug(true);	
 #endif
 
+#if 0
+    // FIXME
 	// modify resolution
 	Ptr<UpdateDisplay> upd = UpdateDisplay::Create();
 	upd->SetFullscreen(false);
@@ -168,6 +170,7 @@ DemoProjectApplication::SetupGameFeatures()
 	upd->SetTripleBufferingEnabled(true);
 	upd->SetDisplayMode(mode);
 	GraphicsInterface::Instance()->Send(upd.upcast<Messaging::Message>());
+#endif
 }
 
 //------------------------------------------------------------------------------
