@@ -13,7 +13,7 @@
 #include "framecapture/framecapturerendermodule.h"
 #include "framecaptureprotocol.h"
 #include "imgui/imgui.h"
-
+#include "frame/frameserver.h"
 
 namespace Tools
 {
@@ -89,9 +89,9 @@ TestViewerApplication::Open()
 			float x = n_rand() * 10.0f - 5.0f;
 			float y = 10;
 			float z = n_rand() * 10.0f - 5.0f;
-			float r = n_rand();
-			float g = n_rand();
-			float b = n_rand();
+			float r = n_rand() * 10;
+			float g = n_rand() * 10;
+			float b = n_rand() * 10;
                 
             Ptr<PointLightEntity> pointLight = PointLightEntity::Create();            
             pointLight->SetTransformFromPosDirAndRange(point(x, y, z), -vector::upvec(), lightRange);
@@ -133,16 +133,18 @@ TestViewerApplication::Open()
         this->testSpotLight = SpotLightEntity::Create();
         this->testSpotLight->SetTransform(transform);
         this->testSpotLight->SetCastShadows(false);
-        this->testSpotLight->SetColor(float4(1,0.7f,1,0.1));
+        this->testSpotLight->SetColor(float4(10,10.7f,10,0.1));
         this->stage->AttachEntity(this->testSpotLight.cast<GraphicsEntity>());
 
         // setup models        
 		this->ground = ModelEntity::Create();
-		this->ground->SetResourceId(ResourceId("mdl:examples/dummyground.n3"));
+		this->ground->SetResourceId(ResourceId("mdl:environment/Groundplane.n3"));
 		transform = matrix44::translation(0,-10,0);
 		this->ground->SetTransform(matrix44::multiply(transform, matrix44::translation(0, n_deg2rad(90), 0)));
 		this->stage->AttachEntity(ground.cast<GraphicsEntity>());
 
+		this->testPosteffect = Frame::FrameServer::Instance()->LookupFrameShader(NEBULA3_DEFAULT_FRAMESHADER_NAME)->GetFramePassBaseByName("Finalize").downcast<Frame::FramePostEffect>();
+		this->testTex = Resources::ResourceManager::Instance()->CreateManagedResource(Texture::RTTI, "tex:Buildings/Castle_Wall_Diffuse.dds", NULL, true).downcast<ManagedTexture>();
 
 		this->billboard = BillboardEntity::Create();
 		this->billboard->SetViewAligned(true);
@@ -176,15 +178,15 @@ TestViewerApplication::Open()
 		*/
 
 		IndexT c = 0;
-		for (int i = -50; i < 50; i++)
+		for (int i = -10; i < 10; i++)
 		{
 			for (int j = -10; j < 10; j++)
 			{
 				Ptr<ModelEntity> modelEntity = ModelEntity::Create();
 				//modelEntity->SetResourceId("mdl:characters/cpt_g.n3");
-				modelEntity->SetResourceId("mdl:examples/ak74.n3");
-				modelEntity->SetTransform(matrix44::translation(point(i * 3.0f, 0.0f, j * 15.0f)));
-				modelEntity->SetInstanced(true);
+				modelEntity->SetResourceId("mdl:Buildings/castle_wall_small.n3");
+				modelEntity->SetTransform(matrix44::translation(point(i * 3.0f, 0.0f, j * 3.0f)));
+				//modelEntity->SetInstanced(true);
 				this->stage->AttachEntity(modelEntity.cast<GraphicsEntity>());
 				models.Append(modelEntity);
 
@@ -331,6 +333,15 @@ TestViewerApplication::OnProcessInput()
     {
         this->direction *= -1;
     }
+	else if (kbd->KeyDown(Key::F))
+	{
+
+		Ptr<UpdModelNodeInstanceSurfaceConstant> msg = UpdModelNodeInstanceSurfaceConstant::Create();
+		msg->SetName("MatAlbedoIntensity");
+		msg->SetValue(Math::float4(0.0f));
+		msg->SetModelNodeInstanceName("*/mesh");
+		__Send(this->models.Front(), msg);
+	}
     
 	/*
     bool updateSharedVar = false;
@@ -440,10 +451,12 @@ TestViewerApplication::OnUpdateFrame()
     //DebugShapeRenderer::Instance()->DrawCylinder(matrix44::translation(-1.0f, 3.0f, 0.0f), float4(1.0f, 0.5f, 0.2f, 0.5f));
     //DebugShapeRenderer::Instance()->DrawTorus(matrix44::translation(2.0f, 1.0f, 0.0f), float4(0.3f, 0.5f, 0.2f, 0.5f));
 
+	//this->testPosteffect->GetShaderState()->GetVariableByName("CopyBuffer")->SetTexture(this->testTex->GetTexture());
+
 	this->ui->BeginFrame();
 	Timing::Time frameTime = (float)this->GetFrameTime();
 	ImGui::Begin("TestViewer", NULL, ImVec2(200, 200));
-	ImGui::TextColored(ImVec4(0.7f, 0.3f, 0.3f, 1.0f), "FPS: %.2f", 1 / frameTime);
+	ImGui::Text("FPS: %.2f", 1 / frameTime);
 
     if (this->benchmarkmode)
     {
