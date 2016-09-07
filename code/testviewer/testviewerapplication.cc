@@ -82,8 +82,8 @@ TestViewerApplication::Open()
 
         // create a few point lights
         IndexT lightIndex;
-        const SizeT numLights = 1;
-        const float lightRange = 25;
+        const SizeT numLights = 0;
+        const float lightRange = 100;
         for (lightIndex = 0; lightIndex < numLights; lightIndex++)
         {   
 			float x = n_rand() * 10.0f - 5.0f;
@@ -105,7 +105,7 @@ TestViewerApplication::Open()
             this->stage->AttachEntity(pointLight.cast<GraphicsEntity>());
         }
 
-        const SizeT numSpotLights = 0;
+        const SizeT numSpotLights = 1;
         for (lightIndex = 0; lightIndex < numSpotLights; lightIndex++)
         {
             float x = n_rand() * 10.0f - 5.0f;
@@ -115,11 +115,11 @@ TestViewerApplication::Open()
             float g = n_rand() + 0.1f;
             float b = n_rand() + 0.1f;
             matrix44 spotLightTransform = matrix44::multiply(matrix44::rotationy(n_deg2rad(90)), matrix44::rotationx(n_deg2rad(-65.0f)));
-            spotLightTransform.scale(point(7,7,7));
+           // spotLightTransform.scale(point(7,7,7));
             spotLightTransform.set_position(point(x,y,z));
             Ptr<SpotLightEntity> spotLight = SpotLightEntity::Create();
             spotLight->SetTransform(spotLightTransform);
-            spotLight->SetColor(float4(r, g, b, 1.0f));
+            spotLight->SetColor(float4(r, g, b, 1.0f) * 10);
             spotLight->SetCastShadows(false);
             this->spotLights.Append(spotLight);
             this->stage->AttachEntity(spotLight.cast<GraphicsEntity>());
@@ -134,7 +134,7 @@ TestViewerApplication::Open()
         this->testSpotLight->SetTransform(transform);
         this->testSpotLight->SetCastShadows(false);
         this->testSpotLight->SetColor(float4(10,10.7f,10,0.1));
-        this->stage->AttachEntity(this->testSpotLight.cast<GraphicsEntity>());
+		//this->stage->AttachEntity(this->testSpotLight.cast<GraphicsEntity>());
 
         // setup models        
 		this->ground = ModelEntity::Create();
@@ -177,14 +177,18 @@ TestViewerApplication::Open()
 		}
 		*/
 
+		//Util::String strs[] = { "mdl:Buildings/castle_wall_small.n3", "mdl:Buildings/castle_wall.n3", "mdl:Buildings/castle_keep.n3", "mdl:Buildings/castle_tower.n3", "mdl:Buildings/Upgrade_Siege.n3", "mdl:Buildings/Upgrade_Range.n3" };
+		//Util::String strs[] = { "mdl:Buildings/castle_wall_small.n3" };
+		Util::String strs[] = { "mdl:system/placeholder.n3" };
+		const uint cnt = sizeof(strs) / sizeof(Util::String);
 		IndexT c = 0;
-		for (int i = -10; i < 10; i++)
+		for (int i = -1; i < 1; i++)
 		{
-			for (int j = -10; j < 10; j++)
+			for (int j = -1; j < 1; j++)
 			{
 				Ptr<ModelEntity> modelEntity = ModelEntity::Create();
 				//modelEntity->SetResourceId("mdl:characters/cpt_g.n3");
-				modelEntity->SetResourceId("mdl:Buildings/castle_wall_small.n3");
+				modelEntity->SetResourceId(strs[(n_abs(i + j)) % cnt]);
 				modelEntity->SetTransform(matrix44::translation(point(i * 3.0f, 0.0f, j * 3.0f)));
 				//modelEntity->SetInstanced(true);
 				this->stage->AttachEntity(modelEntity.cast<GraphicsEntity>());
@@ -458,6 +462,8 @@ TestViewerApplication::OnUpdateFrame()
 	ImGui::Begin("TestViewer", NULL, ImVec2(200, 200));
 	ImGui::Text("FPS: %.2f", 1 / frameTime);
 
+	_debug_text("Hej! Hej!Hej!Hej!Hej!Hej!Hej!Hej!Hej!", Math::float2(0.5f), Math::float4(1.0f));
+
     if (this->benchmarkmode)
     {
         // benchmark with avg frames for every 100 frames
@@ -510,7 +516,7 @@ TestViewerApplication::OnUpdateFrame()
 				intensity = (int)c.w();
 				ImGui::ColorEdit3("Color", color);
 				ImGui::SliderInt("Intensity", &intensity, 1, 25);
-				this->pointLights[i]->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, (float)intensity));
+				this->spotLights[i]->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, (float)intensity));
 				ImGui::TreePop();
 			}
 		}
@@ -545,12 +551,13 @@ TestViewerApplication::OnUpdateFrame()
 	{
 		float color[4];
 		Math::float4 c = this->globalLight->GetColor();
-		color[0] = c.x();
-		color[1] = c.y();
-		color[2] = c.z();
-		color[3] = c.w();
+		color[0] = c.x() / c.w();
+		color[1] = c.y() / c.w();
+		color[2] = c.z() / c.w();
+		int intensity = (int)c.w();
 		ImGui::ColorEdit4("Diffuse color", color);
-		this->globalLight->SetColor(Math::float4(color[0], color[1], color[2], color[3]));
+		ImGui::SliderInt("Intensity", &intensity, 1, 25);
+		this->globalLight->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, (float)intensity));
 
 		c = this->globalLight->GetAmbientLightColor();
 		color[0] = c.x();
@@ -622,10 +629,12 @@ TestViewerApplication::OnUpdateFrame()
     // rotate spotlights
     for (i = 0; i < this->spotLights.Size(); i++)
     {
-        matrix44 spotLightTransform = matrix44::rotationyawpitchroll(time * 2 * (i+1) / this->spotLights.Size(), n_deg2rad(-55), 0);        
-        spotLightTransform.scale(point(i * 0.2f + 15, 30, i * 0.2f + 15));
-        spotLightTransform.set_position(this->spotLights[i]->GetTransform().get_position());
-        this->spotLights[i]->SetTransform(spotLightTransform);
+		matrix44 spotLightTransform;
+		scalar scaleFactor = i * 1.5f + 30;
+		spotLightTransform.scale(point(scaleFactor, scaleFactor, scaleFactor + 10));
+		spotLightTransform = matrix44::multiply(spotLightTransform, matrix44::rotationyawpitchroll(time * 2 * (i + 1) / this->spotLights.Size(), n_deg2rad(-55), 0));
+        spotLightTransform.set_position(this->spotLights[i]->GetTransform().get_position());		
+		this->spotLights[i]->SetTransform(spotLightTransform);
     }
 
 
