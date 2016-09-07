@@ -16,7 +16,7 @@
 #include "scriptingfeature/scriptingcommands.h"
 #include "demogameapplication.h"
 #include "coregraphics/displaymode.h"
-#include "uicommands.h"
+#include "ui/uicommands.h"
 
 
 namespace Tools
@@ -156,6 +156,8 @@ DemoProjectApplication::SetupGameFeatures()
 	this->uiFeature->SetRenderDebug(true);	
 #endif
 
+#if 0
+    //FIXME
 	// modify resolution
 	Ptr<UpdateDisplay> upd = UpdateDisplay::Create();
 	upd->SetFullscreen(true);
@@ -167,6 +169,7 @@ DemoProjectApplication::SetupGameFeatures()
 	upd->SetDisplayMode(mode);
 	// uncomment for setting fullscreen
 	//GraphicsInterface::Instance()->Send(upd.upcast<Messaging::Message>());
+#endif
 }
 
 //------------------------------------------------------------------------------

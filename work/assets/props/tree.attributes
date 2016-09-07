@@ -2,7 +2,7 @@
 <Nebula3 version="1">
     <Options exportFlags="12" exportMode="0" scale="0.010000" />
     <States>
-        <ModelNode name="root/tree_canopy_mesh" material="sur:props/tree">
+        <ModelNode name="root/tree_canopy_mesh" material="sur:props/oak_tree_01">
             <Textures>
                 <Texture name="DiffuseMap" value="tex:system/placeholder" />
                 <Texture name="NormalMap" value="tex:system/nobump" />

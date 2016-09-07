@@ -42,6 +42,7 @@ public:
 private:
 	Util::Array<Ptr<Game::Entity>> boxes;
 	Ptr<Game::Entity> player;
+	Ptr<Game::Entity> b;
 }; 
 } // namespace Demos
 //------------------------------------------------------------------------------

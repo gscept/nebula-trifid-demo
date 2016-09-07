@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<BluePrints>       
+<BluePrints>    
     <Entity cppclass="Entity" type="ClickPlayer">
         <Property type="GraphicsFeature::ChaseCameraProperty" />
         <Property type="GraphicsFeature::ActorGraphicsProperty" />
+        <Property type="PhysicsFeature::PointNClickInputProperty" />
         <Property type="PhysicsFeature::ActorPhysicsProperty" />
         <Property type="GraphicsFeature::AnimationControlProperty" />
         <Property type="ScriptingFeature::ScriptingProperty" />
-    </Entity>    
+    </Entity>   
     <Entity cppclass="Entity" type="Graphics">
         <Property type="GraphicsFeature::GraphicsProperty" />
         <Property type="ScriptingFeature::ScriptingProperty" />
@@ -16,13 +17,34 @@
         <Property type="GraphicsFeature::InputProperty" />
         <Property type="PhysicsFeature::PhysicsProperty" />
         <Property type="ScriptingFeature::ScriptingProperty" />
-    </Entity>    
+    </Entity>  
     <Entity cppclass="Entity" type="Player">
-        <Property type="GraphicsFeature::InputProperty" masterOnly="true"/>
-        <Property type="GraphicsFeature::ChaseCameraProperty" masterOnly="true"/>
+        <Property type="GraphicsFeature::InputProperty" />
+        <Property type="GraphicsFeature::ChaseCameraProperty" />
         <Property type="GraphicsFeature::ActorGraphicsProperty" />
         <Property type="PhysicsFeature::ActorPhysicsProperty" />
         <Property type="GraphicsFeature::AnimationControlProperty" />
         <Property type="ScriptingFeature::ScriptingProperty" />
-    </Entity>            
+        <Property type="PhysicsFeature::InteractProperty" />
+    </Entity>
+  <Entity cppclass="Entity" type="FpsPlayer">
+    <Property type="GraphicsFeature::FpsCameraProperty" />
+    <Property type="GraphicsFeature::InputProperty" />    
+    <Property type="GraphicsFeature::ActorGraphicsProperty" />
+    <Property type="PhysicsFeature::ActorPhysicsProperty" />
+    <Property type="GraphicsFeature::AnimationControlProperty" />
+    <Property type="ScriptingFeature::ScriptingProperty" />
+    <Property type="PhysicsFeature::InteractProperty" />
+  </Entity>
+    <Entity cppclass="Entity" type="Switch">
+        <Property type="GraphicsFeature::GraphicsProperty" />
+        <Property type="PhysicsFeature::PhysicsProperty" />
+        <Property type="PhysicsFeature::InteractProperty" />
+    </Entity>  
+    <Entity cppclass="Entity" type="follow">
+        <Property type="GraphicsFeature::ActorGraphicsProperty" />
+        <Property type="PhysicsFeature::ActorPhysicsProperty" />
+        <Property type="GraphicsFeature::AnimationControlProperty" />
+        <Property type="PhysicsFeature::InteractProperty" />
+    </Entity>
 </BluePrints>

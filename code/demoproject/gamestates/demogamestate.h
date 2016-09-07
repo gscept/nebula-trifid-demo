@@ -40,7 +40,7 @@ public:
 	void HandleInput();
 
 private:
-	
+	Util::Array<Ptr<Game::Entity>> boxes;
 }; 
 } // namespace Tools
 //------------------------------------------------------------------------------

@@ -17,6 +17,26 @@
                     <CastShadows>true</CastShadows>
                     <PhysicMaterial>EmptyWood</PhysicMaterial>
                     <Graphics>level/envvironmentLevel</Graphics>
+                    <LoadSynced>false</LoadSynced>
+                    <CollisionEnabled>true</CollisionEnabled>
+                    <DynamicObject>false</DynamicObject>
+                    <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>
+                    <Instanced>false</Instanced>
+                </Attributes>
+            </Object>
+            <Object category="_Environment">
+                <Attributes>
+                    <_ID>net|environment|box_0</_ID>
+                    <Id>box</Id>
+                    <_Level>net</_Level>
+                    <_Layers>Default</_Layers>
+                    <Guid>f7ccb698-6117-4819-93db-bd812de24dc9</Guid>
+                    <ParentGuid>00000000-0000-0000-0000-000000000000</ParentGuid>
+                    <Transform>1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -19.623196, 12.902925, -100.559212, 1.000000</Transform>
+                    <CastShadows>true</CastShadows>
+                    <PhysicMaterial>EmptyWood</PhysicMaterial>
+                    <Graphics>examples/box</Graphics>
+                    <LoadSynced>false</LoadSynced>
                     <CollisionEnabled>true</CollisionEnabled>
                     <DynamicObject>false</DynamicObject>
                     <VelocityVector>0.000000,0.000000,0.000000,0.000000</VelocityVector>

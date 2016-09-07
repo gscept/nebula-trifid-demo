@@ -11,7 +11,7 @@
 #include "input/keyboard.h"
 #include "input/gamepad.h"
 #include "framecapture/framecapturerendermodule.h"
-#include "framecaptureprotocol.h"
+#include "framecapture/framecaptureprotocol.h"
 #include "imgui/imgui.h"
 #include "frame/frameserver.h"
 
@@ -305,11 +305,14 @@ TestViewerApplication::OnProcessInput()
 	else if (kbd->KeyDown(Key::F5))
 	{
 		this->fullscreen = !this->fullscreen;
+#if 0
+        //FIXME
 		Ptr<Graphics::UpdateDisplay> dsp = Graphics::UpdateDisplay::Create();
 		dsp->SetDisplayMode(CoreGraphics::DisplayMode(0, 0, 1024, 768));
 		dsp->SetFullscreen(this->fullscreen);
 		dsp->SetTripleBufferingEnabled(true);
 		GraphicsInterface::Instance()->Send(dsp.upcast<Messaging::Message>());
+#endif
 	}
     else if (kbd->KeyDown(Key::F11))
     {

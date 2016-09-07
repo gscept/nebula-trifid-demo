@@ -19,6 +19,7 @@
 #include "scriptingfeature/scriptingprotocol.h"
 #include "effects/effectsfeatureunit.h"
 #include "networkdemoproject/netdemogameapplication.h"
+#include "networkserver.h"
 
 namespace Demos
 {
@@ -74,6 +75,11 @@ DemoGameState::OnStateLeave( const Util::String& nextState )
 Util::String 
 DemoGameState::OnFrame()
 {
+	if (this->b.isvalid())
+	{
+		EntityManager::Instance()->RemoveEntity(this->b);
+		this->b = 0;
+	}
 	//handle all user input
 	if (Input::InputServer::HasInstance())
 	{
@@ -128,18 +134,18 @@ DemoGameState::HandleInput()
 	{
 		MultiplayerFeature::NetworkGame::Instance()->CreateRoom();
 	}
-	if (kbd->KeyDown(Input::Key::U))
-	{
-		MultiplayerFeature::NetworkGame::Instance()->UnpublishFromMaster();
-	}
 	if (kbd->KeyDown(Input::Key::R))
 	{
 		MultiplayerFeature::NetworkGame::Instance()->UpdateRoomList();
 	}
+	if (kbd->KeyDown(Input::Key::Z))
+	{
+		MultiplayerFeature::NetworkServer::Instance()->SearchForGames();
+	}
 	if (kbd->KeyDown(Input::Key::J))
 	{
-		Util::String id = MultiplayerFeature::NetworkGame::Instance()->GetMasterList()->GetString(Attr::Id,0);
-		MultiplayerFeature::NetworkGame::Instance()->JoinRoom(id);
+	//	Util::String id = MultiplayerFeature::NetworkGame::Instance()->GetMasterList()->GetString(Attr::Id,0);
+		MultiplayerFeature::NetworkGame::Instance()->JoinRoom("127.0.0.1|61111",true);
 
 	}
 	if (kbd->KeyDown(Input::Key::G))
@@ -157,6 +163,19 @@ DemoGameState::HandleInput()
 		EntityManager::Instance()->AttachEntity(entity);
 		this->boxes.Append(entity);
 	}
+	if (kbd->KeyDown(Input::Key::M))
+	{
+		
+		if (!this->b.isvalid())			
+		{
+			Ptr<Game::Entity> entity = FactoryManager::Instance()->CreateEntityByTemplate("Simple", "box");
+			Math::matrix44 trans;
+			trans.translate(Math::float4(0, 4, 0, 0));
+			entity->SetMatrix44(Attr::Transform, trans);
+			EntityManager::Instance()->AttachEntity(entity);
+			this->b = entity;
+		}
+	}
 	if (kbd->KeyDown(Input::Key::E))
 	{
 		for (int i = 0; i < this->boxes.Size(); i++)
@@ -169,6 +188,13 @@ DemoGameState::HandleInput()
 	{
 		this->player = FactoryManager::Instance()->CreateEntityByTemplate("Player", "dummychar");
 		EntityManager::Instance()->AttachEntity(this->player);
+	}
+	if (kbd->KeyDown(Input::Key::R))
+	{
+		static bool rd = false;
+		Demos::DemoProjectApplication *app = (Demos::DemoProjectApplication*)Demos::DemoProjectApplication::Instance();
+		app->player->SetReady(rd);
+		rd = !rd;
 	}
 }
 } // namespace Tools

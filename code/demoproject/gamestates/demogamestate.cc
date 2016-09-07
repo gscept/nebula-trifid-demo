@@ -123,5 +123,23 @@ DemoGameState::HandleInput()
 	{
 		EffectsFeature::EffectsFeatureUnit::Instance()->EmitGraphicsEffect(Math::matrix44::translation(n_rand(-5, 5), 10, n_rand(-5, 5)), "mdl:particles/newparticle.n3", 10.0f);
 	}
+	if (kbd->KeyDown(Input::Key::Q))
+	{
+		Ptr<Game::Entity> entity = FactoryManager::Instance()->CreateEntityByTemplate("Trigger", "DefaultTriggerBox");
+		Math::matrix44 trans;
+		trans.scale(Math::float4(30, 30, 30, 1));
+		trans.translate(Math::float4(0, 4, 0, 0));
+		entity->SetMatrix44(Attr::Transform, trans);		
+		EntityManager::Instance()->AttachEntity(entity);
+		this->boxes.Append(entity);
+	}
+	if (kbd->KeyDown(Input::Key::E))
+	{
+		for (int i = 0; i < this->boxes.Size(); i++)
+		{
+			EntityManager::Instance()->DeleteEntity(this->boxes[i]);
+		}
+		this->boxes.Clear();
+	}
 }
 } // namespace Tools
