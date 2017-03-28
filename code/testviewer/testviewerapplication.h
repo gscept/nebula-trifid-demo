@@ -16,10 +16,6 @@
 #include "graphics/billboardentity.h"
 #include "dynui/imguiaddon.h"
 
-namespace Frame
-{
-	class FramePostEffect;
-}
 //------------------------------------------------------------------------------
 namespace Tools
 {
@@ -64,9 +60,6 @@ private:
 	bool fullscreen;
     float rotX;
     bool capturing;
-
-	Ptr<Resources::ManagedTexture> testTex;
-	Ptr<Frame::FramePostEffect> testPosteffect;
 };
 
 } // namespace Test

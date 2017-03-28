@@ -13,7 +13,6 @@
 #include "framecapture/framecapturerendermodule.h"
 #include "framecapture/framecaptureprotocol.h"
 #include "imgui/imgui.h"
-#include "frame/frameserver.h"
 
 namespace Tools
 {
@@ -67,7 +66,7 @@ TestViewerApplication::Open()
 		matrix44 lightTransform = matrix44::rotationx(n_deg2rad(-45.0f));
         this->globalLight = GlobalLightEntity::Create();
         this->globalLight->SetTransform(lightTransform);
-        this->globalLight->SetColor(float4(0.4f, 0.4f, 0.4f, 0.1f)*3);
+        this->globalLight->SetColor(float4(0.4f, 0.4f, 0.4f, 0.1f));
         this->globalLight->SetBackLightColor(float4(0.0f, 0.0f, 0.15f, 0.1f));
         this->globalLight->SetAmbientLightColor(float4(0.2f, 0.2f, 0.2f, 1.0f));
         this->globalLight->SetCastShadows(false);
@@ -105,7 +104,7 @@ TestViewerApplication::Open()
             this->stage->AttachEntity(pointLight.cast<GraphicsEntity>());
         }
 
-        const SizeT numSpotLights = 1;
+        const SizeT numSpotLights = 3;
         for (lightIndex = 0; lightIndex < numSpotLights; lightIndex++)
         {
             float x = n_rand() * 10.0f - 5.0f;
@@ -134,7 +133,7 @@ TestViewerApplication::Open()
         this->testSpotLight->SetTransform(transform);
         this->testSpotLight->SetCastShadows(false);
         this->testSpotLight->SetColor(float4(10,10.7f,10,0.1));
-		//this->stage->AttachEntity(this->testSpotLight.cast<GraphicsEntity>());
+		this->stage->AttachEntity(this->testSpotLight.cast<GraphicsEntity>());
 
         // setup models        
 		this->ground = ModelEntity::Create();
@@ -142,9 +141,6 @@ TestViewerApplication::Open()
 		transform = matrix44::translation(0,-10,0);
 		this->ground->SetTransform(matrix44::multiply(transform, matrix44::translation(0, n_deg2rad(90), 0)));
 		this->stage->AttachEntity(ground.cast<GraphicsEntity>());
-
-		this->testPosteffect = Frame::FrameServer::Instance()->LookupFrameShader(NEBULA3_DEFAULT_FRAMESHADER_NAME)->GetFramePassBaseByName("Finalize").downcast<Frame::FramePostEffect>();
-		this->testTex = Resources::ResourceManager::Instance()->CreateManagedResource(Texture::RTTI, "tex:Buildings/Castle_Wall_Diffuse.dds", NULL, true).downcast<ManagedTexture>();
 
 		this->billboard = BillboardEntity::Create();
 		this->billboard->SetViewAligned(true);
@@ -177,20 +173,22 @@ TestViewerApplication::Open()
 		}
 		*/
 
-		//Util::String strs[] = { "mdl:Buildings/castle_wall_small.n3", "mdl:Buildings/castle_wall.n3", "mdl:Buildings/castle_keep.n3", "mdl:Buildings/castle_tower.n3", "mdl:Buildings/Upgrade_Siege.n3", "mdl:Buildings/Upgrade_Range.n3" };
-		//Util::String strs[] = { "mdl:Buildings/castle_wall_small.n3" };
+		//Util::String strs[] = { "mdl:Buildings/castle_wall_small.n3", "mdl:Buildings/castle_wall.n3" };
+		//Util::String strs[] = { "mdl:Buildings/castle_tower.n3" };
+		//Util::String strs[] = { "mdl:Units/Unit_Archer.n3", "mdl:Units/Unit_Catapult.n3", "mdl:Units/Unit_Footman.n3", "mdl:Units/unit_king.n3", "mdl:Units/Unit_Knight.n3", "mdl:Units/Unit_Spearman.n3", "mdl:Units/Unit_Rifleman.n3", "mdl:Buildings/castle_wall_small.n3", "mdl:Buildings/castle_wall.n3", "mdl:Buildings/castle_keep.n3", "mdl:Buildings/castle_tower.n3", "mdl:Buildings/Upgrade_Siege.n3", "mdl:Buildings/Upgrade_Range.n3" };
 		Util::String strs[] = { "mdl:system/placeholder.n3" };
 		const uint cnt = sizeof(strs) / sizeof(Util::String);
 		IndexT c = 0;
-		for (int i = -1; i < 1; i++)
+		for (int i = -50; i < 50; i++)
 		{
-			for (int j = -1; j < 1; j++)
+			for (int j = -50; j < 50; j++)
 			{
 				Ptr<ModelEntity> modelEntity = ModelEntity::Create();
 				//modelEntity->SetResourceId("mdl:characters/cpt_g.n3");
 				modelEntity->SetResourceId(strs[(n_abs(i + j)) % cnt]);
-				modelEntity->SetTransform(matrix44::translation(point(i * 3.0f, 0.0f, j * 3.0f)));
+				modelEntity->SetTransform(matrix44::translation(point(i * 2.0f, 0.0f, j * 2.0f)));
 				//modelEntity->SetInstanced(true);
+				//modelEntity->SetAlwaysVisible(true);
 				this->stage->AttachEntity(modelEntity.cast<GraphicsEntity>());
 				models.Append(modelEntity);
 
@@ -198,12 +196,21 @@ TestViewerApplication::Open()
 				Ptr<AnimPlayClip> msg = AnimPlayClip::Create();
 				msg->SetClipName("walk");
 				//msg->SetStartTime((i+j)*3000);
-				msg->SetTimeOffset(n_rand(i*100, j*100));
+				msg->SetTimeOffset(n_irand(i*100, j*100));
 				msg->SetLoopCount(0);
 				__Send(modelEntity, msg);
-				*/				
+				*/
 			}
 		}
+
+		/*
+		Ptr<ModelEntity> particle = ModelEntity::Create();
+		particle->SetResourceId("mdl:Particles/fire_arrow.n3");
+		particle->SetTransform(matrix44::identity());
+		//modelEntity->SetInstanced(true);
+		this->stage->AttachEntity(particle.cast<GraphicsEntity>());
+		models.Append(particle);
+		*/
 
 		// create new ui
 		this->ui = Dynui::ImguiAddon::Create();
@@ -458,14 +465,12 @@ TestViewerApplication::OnUpdateFrame()
     //DebugShapeRenderer::Instance()->DrawCylinder(matrix44::translation(-1.0f, 3.0f, 0.0f), float4(1.0f, 0.5f, 0.2f, 0.5f));
     //DebugShapeRenderer::Instance()->DrawTorus(matrix44::translation(2.0f, 1.0f, 0.0f), float4(0.3f, 0.5f, 0.2f, 0.5f));
 
-	//this->testPosteffect->GetShaderState()->GetVariableByName("CopyBuffer")->SetTexture(this->testTex->GetTexture());
-
 	this->ui->BeginFrame();
 	Timing::Time frameTime = (float)this->GetFrameTime();
 	ImGui::Begin("TestViewer", NULL, ImVec2(200, 200));
 	ImGui::Text("FPS: %.2f", 1 / frameTime);
 
-	_debug_text("Hej! Hej!Hej!Hej!Hej!Hej!Hej!Hej!Hej!", Math::float2(0.5f), Math::float4(1.0f));
+	_debug_text("Hello? Yes, this is text!", Math::float2(0.5f, 0.1f), Math::float4(1.0f));
 
     if (this->benchmarkmode)
     {
@@ -511,15 +516,21 @@ TestViewerApplication::OnUpdateFrame()
 			if (ImGui::TreeNode(label.AsCharPtr()))
 			{
 				float color[3];
-				int intensity;
+				float intensity;
 				const Math::float4& c = this->spotLights[i]->GetColor();
 				color[0] = c.x() / c.w();
 				color[1] = c.y() / c.w();
 				color[2] = c.z() / c.w();
-				intensity = (int)c.w();
+				intensity = c.w();
 				ImGui::ColorEdit3("Color", color);
-				ImGui::SliderInt("Intensity", &intensity, 1, 25);
-				this->spotLights[i]->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, (float)intensity));
+				ImGui::SliderFloat("Intensity", &intensity, 0.1f, 100);
+				this->spotLights[i]->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, intensity));
+				bool castShadows = this->spotLights[i]->GetCastShadows();
+				ImGui::Checkbox("Shadows", &castShadows);
+				this->spotLights[i]->SetCastShadows(castShadows);
+				float shadowIntensity = this->spotLights[i]->GetShadowIntensity();
+				ImGui::SliderFloat("Shadow Intensity", &shadowIntensity, 0.1f, 1);
+				this->spotLights[i]->SetShadowIntensity(shadowIntensity);
 				ImGui::TreePop();
 			}
 		}
@@ -535,14 +546,14 @@ TestViewerApplication::OnUpdateFrame()
 			if (ImGui::TreeNode(label.AsCharPtr()))
 			{
 				float color[4];
-				int intensity;
+				float intensity;
 				const Math::float4& c = this->pointLights[i]->GetColor();
 				color[0] = c.x() / c.w();
 				color[1] = c.y() / c.w();
 				color[2] = c.z() / c.w();
-				intensity = (int)c.w();
+				intensity = c.w();
 				ImGui::ColorEdit3("Color", color);
-				ImGui::SliderInt("Intensity", &intensity, 1, 25);
+				ImGui::SliderFloat("Intensity", &intensity, 0.1f, 100);
 				this->pointLights[i]->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, (float)intensity));
 				ImGui::TreePop();
 			}
@@ -557,9 +568,9 @@ TestViewerApplication::OnUpdateFrame()
 		color[0] = c.x() / c.w();
 		color[1] = c.y() / c.w();
 		color[2] = c.z() / c.w();
-		int intensity = (int)c.w();
+		float intensity = c.w();
 		ImGui::ColorEdit4("Diffuse color", color);
-		ImGui::SliderInt("Intensity", &intensity, 1, 25);
+		ImGui::SliderFloat("Intensity", &intensity, 0.1f, 25);
 		this->globalLight->SetColor(Math::float4(color[0] * intensity, color[1] * intensity, color[2] * intensity, (float)intensity));
 
 		c = this->globalLight->GetAmbientLightColor();
