@@ -4,7 +4,7 @@
 #include "graphics/globallightentity.h"
 #include "graphics/pointlightentity.h"
 #include "graphicsfeatureunit.h"
-#include "physicsfeatureunit.h"
+#include "physicsfeature/physicsfeatureunit.h"
 #include "basegamefeatureunit.h"
 #include "appgame/gameapplication.h"
 #include "scriptingfeature/scriptingfeature.h"

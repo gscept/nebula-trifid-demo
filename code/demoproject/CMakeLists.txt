@@ -25,7 +25,7 @@ ADD_EXECUTABLE(demoproject ${ALLSRCS})
 SET_TARGET_PROPERTIES(demoproject PROPERTIES FOLDER "Demos")
 
 # link to application project, will pull in all dependencies and includes required
-TARGET_LINK_LIBRARIES(demoproject application)
+TARGET_LINK_LIBRARIES(demoproject application application_features ui)
 ADD_DEPENDENCIES(demoproject application)
 
 # apply default compiler settings, has to be done to be consistent throughout

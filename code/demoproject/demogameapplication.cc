@@ -16,7 +16,7 @@
 #include "scriptingfeature/scriptingcommands.h"
 #include "demogameapplication.h"
 #include "coregraphics/displaymode.h"
-#include "uicommands.h"
+#include "ui/uicommands.h"
 
 
 namespace Tools

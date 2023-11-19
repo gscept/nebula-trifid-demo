@@ -11,7 +11,7 @@
 #include "input/keyboard.h"
 #include "input/gamepad.h"
 #include "framecapture/framecapturerendermodule.h"
-#include "framecaptureprotocol.h"
+#include "framecapture/framecaptureprotocol.h"
 #include "imgui/imgui.h"
 
 

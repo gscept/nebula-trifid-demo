@@ -130,7 +130,7 @@ DemoGameState::HandleInput()
 	}
 	if (kbd->KeyDown(Input::Key::U))
 	{
-		MultiplayerFeature::NetworkGame::Instance()->UnpublishFromMaster();
+		//MultiplayerFeature::NetworkGame::Instance()->UnpublishFromMaster();
 	}
 	if (kbd->KeyDown(Input::Key::R))
 	{
